@@ -1,0 +1,139 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Aria2下载代理 | P_P Blog</title>
+<meta name=keywords content>
+<meta name=description content="Aria2 下载代理踩坑指南 需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 Part1:实验 代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。v2ray的系统代理也无法走ariaPart2:解决 思路:把socket代理转换为http的二级代理sudo apt-get install privoxy sudo gedit /etc/privoxy/config 编辑配置文件，设置代理端口
+- listen-address localhost:8118 + #listen-address localhost:8118 forward-socks5t / 127.0.0.1:1080 . //不要忘记&#34;.&#34;，除此之外，端口根据实际更改 listen-address 127.0.0.1:8118 sudo service privoxy restart //重启服务 Part4:验证 1:Firefox验证2：终端验证export http_proxy='http://127.0.0.1:8118' export https_proxy=$http_proxy curl ip.gs ///203.218.253.29 3：设置代理
+`aria2c --conf-path=&#34;/home/kan/downloads/aria2.conf&#34; –http-proxy=&#34;http://127.0.0.1:8118&#34;` ">
+<meta name=author content="PP">
+<link rel=canonical href=https://blog.peterfile.top/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/>
+<meta name=google-site-verification content="P_P Blog">
+<meta name=yandex-verification content="P_P Blog">
+<meta name=msvalidate.01 content="P_P Blog">
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.5e2b4101351c21e906f398ae96901791830f58d430f96f2659dab7eaef7b3cb7.css integrity="sha256-XitBATUcIekG85iulpAXkYMPWNQw+W8mWdq36u97PLc=" rel="preload stylesheet" as=style>
+<link rel=preload href=https://www.emojiall.com/images/svg/google/emoji_u1f970.svg as=image>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://blog.peterfile.top/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=16x16 href=https://blog.peterfile.top/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=32x32 href=https://blog.peterfile.top/%3Clink%20/%20abs%20url%3E>
+<link rel=apple-touch-icon href=https://blog.peterfile.top/%3Clink%20/%20abs%20url%3E>
+<link rel=mask-icon href=https://blog.peterfile.top/%3Clink%20/%20abs%20url%3E>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.1">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aria2下载代理">
+<meta property="og:description" content="Aria2 下载代理踩坑指南 需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 Part1:实验 代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。v2ray的系统代理也无法走ariaPart2:解决 思路:把socket代理转换为http的二级代理sudo apt-get install privoxy sudo gedit /etc/privoxy/config 编辑配置文件，设置代理端口
+- listen-address localhost:8118 + #listen-address localhost:8118 forward-socks5t / 127.0.0.1:1080 . //不要忘记&#34;.&#34;，除此之外，端口根据实际更改 listen-address 127.0.0.1:8118 sudo service privoxy restart //重启服务 Part4:验证 1:Firefox验证2：终端验证export http_proxy='http://127.0.0.1:8118' export https_proxy=$http_proxy curl ip.gs ///203.218.253.29 3：设置代理
+`aria2c --conf-path=&#34;/home/kan/downloads/aria2.conf&#34; –http-proxy=&#34;http://127.0.0.1:8118&#34;` ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.peterfile.top/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/"><meta property="og:image" content="https://blog.peterfile.top/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-10-09T08:56:39+08:00">
+<meta property="article:modified_time" content="2021-10-09T08:56:39+08:00"><meta property="og:site_name" content="P_P Blog">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://blog.peterfile.top/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:title content="Aria2下载代理">
+<meta name=twitter:description content="Aria2 下载代理踩坑指南 需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 Part1:实验 代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。v2ray的系统代理也无法走ariaPart2:解决 思路:把socket代理转换为http的二级代理sudo apt-get install privoxy sudo gedit /etc/privoxy/config 编辑配置文件，设置代理端口
+- listen-address localhost:8118 + #listen-address localhost:8118 forward-socks5t / 127.0.0.1:1080 . //不要忘记&#34;.&#34;，除此之外，端口根据实际更改 listen-address 127.0.0.1:8118 sudo service privoxy restart //重启服务 Part4:验证 1:Firefox验证2：终端验证export http_proxy='http://127.0.0.1:8118' export https_proxy=$http_proxy curl ip.gs ///203.218.253.29 3：设置代理
+`aria2c --conf-path=&#34;/home/kan/downloads/aria2.conf&#34; –http-proxy=&#34;http://127.0.0.1:8118&#34;` ">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.peterfile.top/post/"},{"@type":"ListItem","position":2,"name":"Aria2下载代理","item":"https://blog.peterfile.top/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Aria2下载代理","name":"Aria2下载代理","description":"Aria2 下载代理踩坑指南 需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 Part1:实验 代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。v2ray的系统代理也无法走ariaPart2:解决 思路:把socket代理转换为http的二级代理sudo apt-get install privoxy sudo gedit /etc/privoxy/config 编辑配置文件，设置代理端口\n- listen-address localhost:8118 + #listen-address localhost:8118 forward-socks5t / 127.0.0.1:1080 . //不要忘记\u0026quot;.\u0026quot;，除此之外，端口根据实际更改 listen-address 127.0.0.1:8118 sudo service privoxy restart //重启服务 Part4:验证 1:Firefox验证2：终端验证export http_proxy='http://127.0.0.1:8118' export https_proxy=$http_proxy curl ip.gs ///203.218.253.29 3：设置代理\n`aria2c --conf-path=\u0026quot;/home/kan/downloads/aria2.conf\u0026quot; –http-proxy=\u0026quot;http://127.0.0.1:8118\u0026quot;` ","keywords":[],"articleBody":"Aria2 下载代理踩坑指南 需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 Part1:实验 代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。v2ray的系统代理也无法走ariaPart2:解决 思路:把socket代理转换为http的二级代理sudo apt-get install privoxy sudo gedit /etc/privoxy/config 编辑配置文件，设置代理端口\n- listen-address localhost:8118 + #listen-address localhost:8118 forward-socks5t / 127.0.0.1:1080 . //不要忘记\".\"，除此之外，端口根据实际更改 listen-address 127.0.0.1:8118 sudo service privoxy restart //重启服务 Part4:验证 1:Firefox验证2：终端验证export http_proxy='http://127.0.0.1:8118' export https_proxy=$http_proxy curl ip.gs ///203.218.253.29 3：设置代理\n`aria2c --conf-path=\"/home/kan/downloads/aria2.conf\" –http-proxy=\"http://127.0.0.1:8118\"` ","wordCount":"43","inLanguage":"en","datePublished":"2021-10-09T08:56:39+08:00","dateModified":"2021-10-09T08:56:39+08:00","author":{"@type":"Person","name":"PP"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.peterfile.top/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/"},"publisher":{"@type":"Organization","name":"P_P Blog","logo":{"@type":"ImageObject","url":"https://blog.peterfile.top/%3Clink%20/%20abs%20url%3E"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://blog.peterfile.top/ accesskey=h title="PP_blog (Alt + H)">
+<img src=https://www.emojiall.com/images/svg/google/emoji_u1f970.svg alt=logo aria-label=logo height=35>PP_blog</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://blog.peterfile.top/about/ title=关于>
+<span>关于</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://blog.peterfile.top/>Home</a>&nbsp;»&nbsp;<a href=https://blog.peterfile.top/post/>Posts</a></div>
+<h1 class=post-title>
+Aria2下载代理
+</h1>
+<div class=post-meta>October 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/post/Aria2%e4%b8%8b%e8%bd%bd%e4%bb%a3%e7%90%86.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div>
+</header>
+<div class=post-content><h1 id=aria2-下载代理踩坑指南>Aria2 下载代理踩坑指南<a hidden class=anchor aria-hidden=true href=#aria2-下载代理踩坑指南>#</a></h1>
+<p>需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 </p>
+<h1 id=part1实验>Part1:实验<a hidden class=anchor aria-hidden=true href=#part1实验>#</a></h1>
+<p>代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。</p>
+<p>v2ray的系统代理也无法走aria</p>
+<h1 id=part2解决>Part2:解决<a hidden class=anchor aria-hidden=true href=#part2解决>#</a></h1>
+<p>思路:把socket代理转换为http的二级代理</p>
+<pre tabindex=0><code>sudo apt-get install privoxy
+
+sudo gedit /etc/privoxy/config 
+</code></pre><p>编辑配置文件，设置代理端口</p>
+<pre tabindex=0><code>- listen-address  localhost:8118
++ #listen-address  localhost:8118
+
+forward-socks5t   /   127.0.0.1:1080 . //不要忘记&quot;.&quot;，除此之外，端口根据实际更改
+listen-address  127.0.0.1:8118
+
+sudo service privoxy restart  //重启服务
+</code></pre><h1 id=part4验证>Part4:验证<a hidden class=anchor aria-hidden=true href=#part4验证>#</a></h1>
+<p>1:Firefox验证</p>
+<p>2：终端验证</p>
+<pre tabindex=0><code>export http_proxy='http://127.0.0.1:8118' 
+export https_proxy=$http_proxy
+
+curl ip.gs
+///203.218.253.29
+</code></pre><p>3：设置代理</p>
+<pre><code>`aria2c --conf-path=&quot;/home/kan/downloads/aria2.conf&quot; –http-proxy=&quot;http://127.0.0.1:8118&quot;`</code></pre>
+</div>
+<footer class=post-footer>
+<nav class=paginav>
+<a class=prev href=https://blog.peterfile.top/post/aria2%E9%85%8D%E7%BD%AE/>
+<span class=title>« Prev Page</span>
+<br>
+<span>Aria2配置</span>
+</a>
+<a class=next href=https://blog.peterfile.top/post/rtl8821ce/>
+<span class=title>Next Page »</span>
+<br>
+<span>Rtl8821ce网卡</span>
+</a>
+</nav>
+</footer>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2021 <a href=https://blog.peterfile.top/>P_P Blog</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerText='copy';function d(){a.innerText='copied!',setTimeout(()=>{a.innerText='copy'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
+</body>
+</html>
