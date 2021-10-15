@@ -61,6 +61,19 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Tarpeia|塔培亚
+</h2>
+</header>
+<section class=entry-content>
+<p>闲来无事看罗马史，有一个非常有意思的故事 主人公叫塔培亚
+先给个维基百科的link
+In Roman mythology, Tarpeia (/tɑːrˈpiːə/), daughter of the Roman commander Spurius Tarpeius, was a Vestal virgin who betrayed the city of Rome to the Sabines at the time of their women’s abduction for what she thought would be a reward of jewelry. She was instead crushed to death and her body cast from the southern cliff of Rome’s Capitoline Hill, thereafter called after her the Tarpeian Rock (Rupes Tarpeia)....</p>
+</section>
+<footer class=entry-footer>October 15, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
+<a class=entry-link aria-label="post link to Tarpeia|塔培亚" href=https://blog.peterfile.top/post/tarpeia/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>为什么是asoul
 </h2>
 </header>
@@ -148,21 +161,6 @@ curl -d "action=login&username=%7BSRUN3%7D%0D%0A645%3B67454657&password=7ccAAcc9
 </section>
 <footer class=entry-footer>October 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
 <a class=entry-link aria-label="post link to Aria2下载代理" href=https://blog.peterfile.top/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Rtl8821ce网卡
-</h2>
-</header>
-<section class=entry-content>
-<p>Rtl8821ce网卡 Linux驱动安装的各种坑 给室友的电脑装上Linux之后，整个系统流畅度提升了不知一点半点但是有个致命的bug:不能用官方的Pcie网卡，虽然外接免驱网卡可以使用，但是对于一个只有两个USB接口的电脑来说，就显得相形见绌了。于是开整。Step1:找驱动 搜索引擎随便搜一下，就有很多，例如 这个 ，但是在安装过程中报错了qwq 根据 修改教程 把
-rtl8821ce/os_dep/linux/os_intfs.c
-中原有的
-@@ -1323,9 +1323,8 @@ unsigned int rtw_classify8021d(struct sk_buff *skb) static u16 rtw_select_queue(struct net_device *dev, struct sk_buff *skb -#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 13, 0) ,struct net_device *sb_dev -#endif + ,select_queue_fallback_t fallback ) { _adapter *padapter = rtw_netdev_priv(dev); 改为
-@@ -1323,9 +1323,8 @@ unsigned int rtw_classify8021d(struct sk_buff *skb) static u16 rtw_select_queue(struct net_device *dev, struct sk_buff *skb -#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 13, 0) - ,struct net_device *sb_dev -#endif + ,select_queue_fallback_t fallback ) { _adapter *padapter = rtw_netdev_priv(dev); 不知道为什么，原贴中说的 “函数实现少了第四个形参” 在我这里并不需要。而且加上会影响编译。 但是在 make sudo make install sudo modprobe -a 8821ce 之后，并没有安装成功...</p>
-</section>
-<footer class=entry-footer>October 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
-<a class=entry-link aria-label="post link to Rtl8821ce网卡" href=https://blog.peterfile.top/post/rtl8821ce/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
