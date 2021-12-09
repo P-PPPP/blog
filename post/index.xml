@@ -9,7 +9,47 @@
       <link>https://blog.peterfile.top/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Oct 2021 11:30:44 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Dec 2021 09:28:42 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RDP 在无显示器的环境下进行gui调试</title>
+      <link>https://blog.peterfile.top/post/rdp/</link>
+      <pubDate>Thu, 09 Dec 2021 09:28:42 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/rdp/</guid>
+      <description>需求 在WIndows Server 服务器上进行剪映的自动化服务,需要用到 pyautogui 和 win32api
+解决  保持gui链接: 在远程桌面中创建 Close.bat 并输入  %1 mshta vbscript:CreateObject(&amp;#34;Shell.Application&amp;#34;).ShellExecute(&amp;#34;cmd.exe&amp;#34;,&amp;#34;/c %~s0::&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;runas&amp;#34;,1)(window.close)&amp;amp;&amp;amp;exit for /f &amp;#34;skip=1 tokens=3&amp;#34; %%s in (&amp;#39;query user %USERNAME%&amp;#39;) do ( %windir%\System32\tscon.exe %%s /dest:console ) 即可在断开RDP的情况下保持Gui 但是会自动最小化务必在代码中把需要调试的gui应用置于前端,否则无法识别</description>
+    </item>
+    
+    <item>
+      <title>无显示器调试</title>
+      <link>https://blog.peterfile.top/post/nomonitor/</link>
+      <pubDate>Thu, 09 Dec 2021 09:23:45 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/nomonitor/</guid>
+      <description>思路借助了 这个 其实就是通过 xvfb 在Linux 的 DISPLAY 变量输出到虚拟显示器
+sudo apt-get install xserver-xorg-video-dummy sudo apt install xvfb x11vnc apt install lightdm export DISPLAY=:1 Xvfb :1 -screen 0 1920x1080x16 &amp;amp; exec lightdm-session &amp;amp; apt install rdesktop kill
+ps -ef|grep X 链接RDP 从某种角度而言,你可以通过rdesktop远程保持Windows Server 的链接,即使没有一个显示器 rdesktop IP -u USERNAME -p PASSWORD -g 1920x1080
+当然对于RDP链接的坑,我建议你看这篇文章</description>
+    </item>
+    
+    <item>
+      <title>Hangover</title>
+      <link>https://blog.peterfile.top/post/hangover/</link>
+      <pubDate>Thu, 21 Oct 2021 17:45:33 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/hangover/</guid>
+      <description>Build Step1 安装必要依赖 sudo apt install gcc-mingw-w64 mingw-w64-common mingw-w64-i686-dev mingw-w64-x86-64-dev binutils-mingw-w64-i686 binutils-mingw-w64-x86-64 gcc-mingw-w64-base gcc-mingw-w64-i686 gcc-mingw-w64-x86-64 #gcc的依赖 sudo apt install libglib2.0-* # Qemu Dependences #sudo apt install clang-6.0 libclang-6.0-dev libclang-common-6.0-dev libclang1-6.0 libclang1-6.0-dbg sudo apt install gcc-mingw-w64 libasound2-dev libpulse-dev libdbus-1-dev libfontconfig-dev libfreetype-dev libgnutls28-dev libjpeg62-turbo-dev libpng-dev libtiff-dev libgl-dev libunwind-dev libxrender libxml2 libxslt libgnutls libjpeg #wine依赖 Step2 编译 编译 Clang5.05 #下载llvm源码 wget http://llvm.org/releases/5.0.2/llvm-5.0.2.src.tar.xz #解压llvm tar xf llvm-5.0.2.src.tar.xz &amp;amp;&amp;amp; mv llvm-5.0.2.src llvm #下载Clang源码 cd llvm/tools wget http://llvm.</description>
+    </item>
+    
+    <item>
+      <title>GetPip</title>
+      <link>https://blog.peterfile.top/post/getpip/</link>
+      <pubDate>Tue, 19 Oct 2021 15:23:47 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/getpip/</guid>
+      <description>root@OpenWrt:/# curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py root@OpenWrt:/# python3 get-pip.py --force-reinstall </description>
+    </item>
+    
     <item>
       <title>Tarpeia|塔培亚</title>
       <link>https://blog.peterfile.top/post/tarpeia/</link>
