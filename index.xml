@@ -9,7 +9,28 @@
       <link>https://blog.peterfile.top/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Dec 2021 09:28:42 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Feb 2022 20:49:30 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022.2.14</title>
+      <link>https://blog.peterfile.top/post/2022.2.14/</link>
+      <pubDate>Mon, 14 Feb 2022 20:49:30 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/2022.2.14/</guid>
+      <description>2022.02.14 明年可别像这样了😥</description>
+    </item>
+    
+    <item>
+      <title>在Linux上通过Wine使用必剪客户端</title>
+      <link>https://blog.peterfile.top/post/winebcut/</link>
+      <pubDate>Sun, 26 Dec 2021 22:03:15 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/winebcut/</guid>
+      <description>应用方法可预见地宽阔了起来。
+   
+剪映和必剪客户端组成分析 两个都使用了ELectron封装,Gpu加速,使用D3d + ffmpeg 作为后端。 对于electron,是基于C++开发的支持nodejs的封装工具.也就是理论上和实际上,这两个应用都能原生支持Linux 在Linux上可以用OpenGl + ffmpeg 作为其后端
+必剪移植过程  按照官网安装Wine和Winetricks (Wine &amp;ndash;version 7.0/winetricks latest) 安装 D3dx,.Net,Vs C++依赖 安装 Wine-mono 和 Wine-geeko 下载必剪Windows客户端 尝试使用Wine BCUT.exe 运行安装程序. 启动  错误处理 X Error of failed request: GLXBadFBConfig Major opcode of failed request: 153 (GLX) Minor opcode of failed request: 0 () Serial number of failed request: 228 Current serial number in output stream: 228 原因是Mesa问题,解决:</description>
+    </item>
+    
     <item>
       <title>RDP 在无显示器的环境下进行gui调试</title>
       <link>https://blog.peterfile.top/post/rdp/</link>
