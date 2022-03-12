@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.peterfile.top/post/2022.2.14/</loc>
-    <lastmod>2022-02-14T20:49:30+08:00</lastmod>
+    <loc>https://blog.peterfile.top/post/chrome_in_firefox/</loc>
+    <lastmod>2022-03-12T21:41:42+08:00</lastmod>
   </url><url>
     <loc>https://blog.peterfile.top/</loc>
-    <lastmod>2022-02-14T20:49:30+08:00</lastmod>
+    <lastmod>2022-03-12T21:41:42+08:00</lastmod>
   </url><url>
     <loc>https://blog.peterfile.top/post/</loc>
+    <lastmod>2022-03-12T21:41:42+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.peterfile.top/post/rulestobreak/</loc>
+    <lastmod>2022-03-03T07:28:59+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.peterfile.top/post/2022.2.14/</loc>
     <lastmod>2022-02-14T20:49:30+08:00</lastmod>
   </url><url>
     <loc>https://blog.peterfile.top/post/winebcut/</loc>
