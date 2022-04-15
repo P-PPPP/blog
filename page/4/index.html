@@ -58,69 +58,18 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
-<h2>RDP 在无显示器的环境下进行gui调试
+<h2>2Hugo
 </h2>
 </header>
 <section class=entry-content>
-<p>需求 在WIndows Server 服务器上进行剪映的自动化服务,需要用到 pyautogui 和 win32api
-解决 保持gui链接: 在远程桌面中创建 Close.bat 并输入 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0::","","runas",1)(window.close)&&exit for /f "skip=1 tokens=3" %%s in ('query user %USERNAME%') do ( %windir%\System32\tscon.exe %%s /dest:console ) 即可在断开RDP的情况下保持Gui 但是会自动最小化务必在代码中把需要调试的gui应用置于前端,否则无法识别</p>
+<p>静态博客 是的，又换成静态博客了.有点逆潮流的趋势，为什么换回了静态呢主要有一下几方面的考量 可以直接部署到Vercel等Severless平台 安全性更强 奥卡姆剃刀原理 服务器的维护麻烦从Asdb的前期开发和维护也能管中窥豹 而且因为前几天Let’s Encypt的SSL证书寄了，导致我现在主域名进不去，管理的话也得跳转主域名，十分复杂。所以对Wordpress和某些Linux管理系统印象不好。内容至上才是正确的</p>
 </section>
-<footer class=entry-footer>December 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
-<a class=entry-link aria-label="post link to RDP 在无显示器的环境下进行gui调试" href=https://blog.peterfile.top/post/rdp/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>无显示器调试
-</h2>
-</header>
-<section class=entry-content>
-<p>思路借助了 这个 其实就是通过 xvfb 在Linux 的 DISPLAY 变量输出到虚拟显示器
-sudo apt-get install xserver-xorg-video-dummy sudo apt install xvfb x11vnc apt install lightdm export DISPLAY=:1 Xvfb :1 -screen 0 1920x1080x16 & exec lightdm-session & apt install rdesktop kill
-ps -ef|grep X 链接RDP 从某种角度而言,你可以通过rdesktop远程保持Windows Server 的链接,即使没有一个显示器 rdesktop IP -u USERNAME -p PASSWORD -g 1920x1080
-当然对于RDP链接的坑,我建议你看这篇文章</p>
-</section>
-<footer class=entry-footer>December 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
-<a class=entry-link aria-label="post link to 无显示器调试" href=https://blog.peterfile.top/post/nomonitor/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Hangover
-</h2>
-</header>
-<section class=entry-content>
-<p>Build Step1 安装必要依赖 sudo apt install gcc-mingw-w64 mingw-w64-common mingw-w64-i686-dev mingw-w64-x86-64-dev binutils-mingw-w64-i686 binutils-mingw-w64-x86-64 gcc-mingw-w64-base gcc-mingw-w64-i686 gcc-mingw-w64-x86-64 #gcc的依赖 sudo apt install libglib2.0-* # Qemu Dependences #sudo apt install clang-6.0 libclang-6.0-dev libclang-common-6.0-dev libclang1-6.0 libclang1-6.0-dbg sudo apt install gcc-mingw-w64 libasound2-dev libpulse-dev libdbus-1-dev libfontconfig-dev libfreetype-dev libgnutls28-dev libjpeg62-turbo-dev libpng-dev libtiff-dev libgl-dev libunwind-dev libxrender libxml2 libxslt libgnutls libjpeg #wine依赖 Step2 编译 编译 Clang5.05 #下载llvm源码 wget http://llvm.org/releases/5.0.2/llvm-5.0.2.src.tar.xz #解压llvm tar xf llvm-5.0.2.src.tar.xz && mv llvm-5.0.2.src llvm #下载Clang源码 cd llvm/tools wget http://llvm....</p>
-</section>
-<footer class=entry-footer>October 21, 2021&nbsp;·&nbsp;5 min&nbsp;·&nbsp;PP</footer>
-<a class=entry-link aria-label="post link to Hangover" href=https://blog.peterfile.top/post/hangover/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>GetPip
-</h2>
-</header>
-<section class=entry-content>
-<p>root@OpenWrt:/# curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py root@OpenWrt:/# python3 get-pip.py --force-reinstall </p>
-</section>
-<footer class=entry-footer>October 19, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
-<a class=entry-link aria-label="post link to GetPip" href=https://blog.peterfile.top/post/getpip/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Tarpeia|塔培亚
-</h2>
-</header>
-<section class=entry-content>
-<p>闲来无事看罗马史，有一个非常有意思的故事 主人公叫塔培亚
-先给个维基百科的link
-In Roman mythology, Tarpeia (/tɑːrˈpiːə/), daughter of the Roman commander Spurius Tarpeius, was a Vestal virgin who betrayed the city of Rome to the Sabines at the time of their women’s abduction for what she thought would be a reward of jewelry. She was instead crushed to death and her body cast from the southern cliff of Rome’s Capitoline Hill, thereafter called after her the Tarpeian Rock (Rupes Tarpeia)....</p>
-</section>
-<footer class=entry-footer>October 15, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
-<a class=entry-link aria-label="post link to Tarpeia|塔培亚" href=https://blog.peterfile.top/post/tarpeia/></a>
+<footer class=entry-footer>October 8, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
+<a class=entry-link aria-label="post link to 2Hugo" href=https://blog.peterfile.top/post/2hugo/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=prev href=https://blog.peterfile.top/>« Prev Page</a>
-<a class=next href=https://blog.peterfile.top/page/3/>Next Page »</a>
+<a class=prev href=https://blog.peterfile.top/page/3/>« Prev Page</a>
 </nav>
 </footer>
 </main>

@@ -2,19 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.peterfile.top/movies/</loc>
-    <lastmod>2022-04-15T21:35:20+08:00</lastmod>
-  </url><url>
     <loc>https://blog.peterfile.top/</loc>
     <lastmod>2022-04-15T21:35:20+08:00</lastmod>
   </url><url>
-    <loc>https://blog.peterfile.top/movies/nocountryforoldmen/</loc>
+    <loc>https://blog.peterfile.top/post/</loc>
+    <lastmod>2022-04-15T21:35:20+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.peterfile.top/post/nocountryforoldmen/</loc>
     <lastmod>2022-04-15T21:35:20+08:00</lastmod>
   </url><url>
     <loc>https://blog.peterfile.top/post/chrome_in_firefox/</loc>
-    <lastmod>2022-03-12T21:41:42+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.peterfile.top/post/</loc>
     <lastmod>2022-03-12T21:41:42+08:00</lastmod>
   </url><url>
     <loc>https://blog.peterfile.top/post/rulestobreak/</loc>
