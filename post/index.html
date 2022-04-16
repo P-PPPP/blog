@@ -61,6 +61,33 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>GoFaster
+</h2>
+</header>
+<section class=entry-content>
+<p></p>
+</section>
+<footer class=entry-footer>April 16, 2022&nbsp;·&nbsp;0 min&nbsp;·&nbsp;PP</footer>
+<a class=entry-link aria-label="post link to GoFaster" href=https://blog.peterfile.top/post/gofaster/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>修复`Node`出错
+</h2>
+</header>
+<section class=entry-content>
+<p>重装软路由系统之后发现无法使用网易云的流媒体解锁服务,使用/etc/init.d/unblockneteasemusic info 发现其实是包裹了 UnblockNeteaseMusic 的预编译版本以适应所有平台
+输入node 发现报错
+# root @ OpenWrt in /usr/share/unblockneteasemusic/core [22:48:04] $ node app.js Error relocating /usr/bin/node: _ZNSt19_Sp_make_shared_tag5_S_eqERKSt9type_info: symbol not found Error relocating /usr/bin/node: _ZNSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEC1Ev: symbol not found Error relocating /usr/bin/node: _ZSt28__throw_bad_array_new_lengthv: symbol not found Error relocating /usr/bin/node: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEEC1Ev: symbol not found 推测应该是node执行文件寄了,键入apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ nodejs 修复(bash 貌似也会G 反正一个道理)
+想起来之前编译hangeover的时候/bin 和 /usr/bin 的坑
+Linux 万物皆文件
+$ node -v v16.14.2 </p>
+</section>
+<footer class=entry-footer>April 16, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
+<a class=entry-link aria-label="post link to 修复`Node`出错" href=https://blog.peterfile.top/post/fixnodeinopenwrt/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>老无所依
 </h2>
 </header>
@@ -103,30 +130,6 @@ The phrase chrome has been used by Mozilla since long before Google Chrome came 
 </section>
 <footer class=entry-footer>March 3, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
 <a class=entry-link aria-label="post link to 规则是用来打破的" href=https://blog.peterfile.top/post/rulestobreak/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>2022.2.14
-</h2>
-</header>
-<section class=entry-content>
-<p>2022.02.14 明年可别像这样了😥</p>
-</section>
-<footer class=entry-footer>February 14, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
-<a class=entry-link aria-label="post link to 2022.2.14" href=https://blog.peterfile.top/post/2022.2.14/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>在Linux上通过Wine使用必剪客户端
-</h2>
-</header>
-<section class=entry-content>
-<p>应用方法可预见地宽阔了起来。
-剪映和必剪客户端组成分析 两个都使用了ELectron封装,Gpu加速,使用D3d + ffmpeg 作为后端。 对于electron,是基于C++开发的支持nodejs的封装工具.也就是理论上和实际上,这两个应用都能原生支持Linux 在Linux上可以用OpenGl + ffmpeg 作为其后端
-必剪移植过程 按照官网安装Wine和Winetricks (Wine –version 7.0/winetricks latest) 安装 D3dx,.Net,Vs C++依赖 安装 Wine-mono 和 Wine-geeko 下载必剪Windows客户端 尝试使用Wine BCUT.exe 运行安装程序. 启动 错误处理 X Error of failed request: GLXBadFBConfig Major opcode of failed request: 153 (GLX) Minor opcode of failed request: 0 () Serial number of failed request: 228 Current serial number in output stream: 228 原因是Mesa问题,解决:...</p>
-</section>
-<footer class=entry-footer>December 26, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP</footer>
-<a class=entry-link aria-label="post link to 在Linux上通过Wine使用必剪客户端" href=https://blog.peterfile.top/post/winebcut/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

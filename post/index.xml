@@ -9,7 +9,30 @@
       <link>https://blog.peterfile.top/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Apr 2022 21:35:20 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Apr 2022 22:59:32 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GoFaster</title>
+      <link>https://blog.peterfile.top/post/gofaster/</link>
+      <pubDate>Sat, 16 Apr 2022 22:59:32 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/gofaster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>修复`Node`出错</title>
+      <link>https://blog.peterfile.top/post/fixnodeinopenwrt/</link>
+      <pubDate>Sat, 16 Apr 2022 22:50:14 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/fixnodeinopenwrt/</guid>
+      <description>重装软路由系统之后发现无法使用网易云的流媒体解锁服务,使用/etc/init.d/unblockneteasemusic info 发现其实是包裹了 UnblockNeteaseMusic 的预编译版本以适应所有平台
+输入node 发现报错
+# root @ OpenWrt in /usr/share/unblockneteasemusic/core [22:48:04] $ node app.js Error relocating /usr/bin/node: _ZNSt19_Sp_make_shared_tag5_S_eqERKSt9type_info: symbol not found Error relocating /usr/bin/node: _ZNSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEC1Ev: symbol not found Error relocating /usr/bin/node: _ZSt28__throw_bad_array_new_lengthv: symbol not found Error relocating /usr/bin/node: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEEC1Ev: symbol not found 推测应该是node执行文件寄了,键入apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ nodejs 修复(bash 貌似也会G 反正一个道理)
+想起来之前编译hangeover的时候/bin 和 /usr/bin 的坑
+Linux 万物皆文件
+$ node -v v16.14.2 </description>
+    </item>
+    
     <item>
       <title>老无所依</title>
       <link>https://blog.peterfile.top/post/nocountryforoldmen/</link>
