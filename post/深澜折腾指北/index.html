@@ -144,7 +144,7 @@ Part4:向更高网速出发
 IP已经在线了
 login_ok</p><p>当都拨号完成之后，我们可以通过如下命令查看网卡是否已经连接互联网</p><p>curl &ndash;interface eth0.4 <a href=http://detectportal.firefox.com/success.txt>http://detectportal.firefox.com/success.txt</a></p><p>success即为成功</p><p>拨号完成</p><p>第四步:整合!多线合一</p><p>首先得安装mwan3相关的包
 前两个是ui和中文包，第三个是核心</p><p>openwrt来到 网络 -> 负载均衡</p><p>新建三个接口，名称必须与网络->接口一样</p><p>如果没错的话，接口的跳跃点会显示出来，点击启用，输入一个能ping通的ip(例如百度)</p><p>之后选择“成员”，把三个接口都放上，命名如下，权重和跃点都默认1</p><p>之后的“策略”如图</p><p>最后来到“规则”</p><p>我这里就直接用了默认规则，如果你有特殊要求，可以指定。</p><p>第五步:检测</p><p>来到 状态 -> 进程</p><p>搜索mwan，看到三个ping进程</p><p>即为多拨成功。此时你的网速大概率可以叠加了。
-Part4:后记</p><p>2020年，网络已经成为了基础设施之一，作为一个重度网络用户，对于学校的垄断和网速阉割实在是无法接受。互联网的核心在于分享，本文可以任意转载，只需在表明原作者即可。</p><p>peace.</p></div><footer class=post-footer><nav class=paginav><a class=prev href=https://blog.peterfile.top/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AFasoul/><span class=title>« Prev Page</span><br><span>为什么是asoul</span></a>
+Part4:后记</p><p>2020年，网络已经成为了基础设施之一，作为一个重度网络用户，对于学校的垄断和网速阉割实在是无法接受。互联网的核心在于分享，本文可以任意转载，只需在表明原作者即可。</p><p>peace.</p></div><footer class=post-footer><nav class=paginav><a class=prev href=https://blog.peterfile.top/post/tarpeia/><span class=title>« Prev Page</span><br><span>Tarpeia|塔培亚</span></a>
 <a class=next href=https://blog.peterfile.top/post/aria2%E9%85%8D%E7%BD%AE/><span class=title>Next Page »</span><br><span>Aria2配置</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2022 <a href=https://blog.peterfile.top/>P_P Blog</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
