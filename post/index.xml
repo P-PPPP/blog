@@ -9,14 +9,23 @@
       <link>https://blog.peterfile.top/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 21 May 2022 23:27:52 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jun 2022 18:01:29 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>再见IE</title>
+      <link>https://blog.peterfile.top/post/byeie/</link>
+      <pubDate>Thu, 16 Jun 2022 18:01:29 +0800</pubDate>
+      
+      <guid>https://blog.peterfile.top/post/byeie/</guid>
+      <description>However IE Already Dead , cause nowhere 4 us to explore anymore, long time ago.</description>
+    </item>
+    
     <item>
       <title>一块红布</title>
       <link>https://blog.peterfile.top/post/apiceosredmap/</link>
       <pubDate>Sat, 21 May 2022 23:27:52 +0800</pubDate>
       
       <guid>https://blog.peterfile.top/post/apiceosredmap/</guid>
-      <description>.meta-media {position: relative;margin-bottom: 30px;display: flex;width: 100%;height: 0;padding-bottom: 75%;}.video {position: absolute;width: 100%;height: 100%;left: 0;top: 0;} 那天是你用一块红布 蒙住我双眼也蒙住了天 你问我看见了什么 我说我看见了幸福 这个感觉真让我舒服 它让我忘掉我没地儿住 你问我还要去何方 我说要上你的路 看不见你也看不见路 我的手也被你攥住 你问我在想什么 我说我要你做主 我感觉你不是铁 却像铁一样的强和烈 我感觉你身上有血 因为你的手是热呼呼 我感觉这不是荒野 却看见这儿的土地已经干裂 我感觉我要喝点水 可你的嘴将我的嘴堵住 我不能走我也不能哭 因为我的身体现在已经干枯 我要永远这样陪伴着你 因为我最知道你的痛苦 </description>
+      <description>那天是你用一块红布 蒙住我双眼也蒙住了天 你问我看见了什么 我说我看见了幸福 这个感觉真让我舒服 它让我忘掉我没地儿住 你问我还要去何方 我说要上你的路 看不见你也看不见路 我的手也被你攥住 你问我在想什么 我说我要你做主 我感觉你不是铁 却像铁一样的强和烈 我感觉你身上有血 因为你的手是热呼呼 我感觉这不是荒野 却看见这儿的土地已经干裂 我感觉我要喝点水 可你的嘴将我的嘴堵住 我不能走我也不能哭 因为我的身体现在已经干枯 我要永远这样陪伴着你 因为我最知道你的痛苦 </description>
     </item>
     
     <item>
@@ -34,7 +43,7 @@
       <pubDate>Sat, 16 Apr 2022 22:59:32 +0800</pubDate>
       
       <guid>https://blog.peterfile.top/post/gofaster/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>
@@ -77,7 +86,7 @@ Chrome ，铬，元素周期表 24 号元素。 镀铬是一种在金属上电�
 当我们在网上冲浪时，看到的网页内容在是在视口（ Viewport ）中的，
 视口周围的浏览器用户界面叫什么呢？早期人类就假借了“闪亮的镀铬装饰物”这个意象，把这些装饰物称为“铬”，
 所以 Firefox 中有一个chrome://协议用来处理一些和浏览器用户界面相关的工作，Chrome 浏览器则直接用了这个名字，意思可能是“看网页的闪亮用户界面”。
- The phrase chrome has been used by Mozilla since long before Google Chrome came on the market. Typically the phrase &amp;ldquo;Chrome&amp;rdquo; referred to all the area around your viewport, but not the viewport itself. Sort of like the chrome plating some cars have around their windscreens or headlights. See here for more details - but no; nothing to do with Google Chrome.</description>
+The phrase chrome has been used by Mozilla since long before Google Chrome came on the market. Typically the phrase &amp;ldquo;Chrome&amp;rdquo; referred to all the area around your viewport, but not the viewport itself. Sort of like the chrome plating some cars have around their windscreens or headlights. See here for more details - but no; nothing to do with Google Chrome.</description>
     </item>
     
     <item>
@@ -106,9 +115,9 @@ Chrome ，铬，元素周期表 24 号元素。 镀铬是一种在金属上电�
       
       <guid>https://blog.peterfile.top/post/winebcut/</guid>
       <description>应用方法可预见地宽阔了起来。
-   
 剪映和必剪客户端组成分析 两个都使用了ELectron封装,Gpu加速,使用D3d + ffmpeg 作为后端。 对于electron,是基于C++开发的支持nodejs的封装工具.也就是理论上和实际上,这两个应用都能原生支持Linux 在Linux上可以用OpenGl + ffmpeg 作为其后端
-必剪移植过程  按照官网安装Wine和Winetricks (Wine &amp;ndash;version 7.0/winetricks latest) 安装 D3dx,.Net,Vs C++依赖 安装 Wine-mono 和 Wine-geeko 下载必剪Windows客户端 尝试使用Wine BCUT.exe 运行安装程序. 启动  错误处理 X Error of failed request: GLXBadFBConfig Major opcode of failed request: 153 (GLX) Minor opcode of failed request: 0 () Serial number of failed request: 228 Current serial number in output stream: 228 原因是Mesa问题,解决:</description>
+必剪移植过程 按照官网安装Wine和Winetricks (Wine &amp;ndash;version 7.0/winetricks latest) 安装 D3dx,.Net,Vs C++依赖 安装 Wine-mono 和 Wine-geeko 下载必剪Windows客户端 尝试使用Wine BCUT.exe 运行安装程序. 启动 错误处理 X Error of failed request: GLXBadFBConfig Major opcode of failed request: 153 (GLX) Minor opcode of failed request: 0 () Serial number of failed request: 228 Current serial number in output stream: 228 原因是Mesa问题,解决:
+MESA_GL_VERSION_OVERRIDE=9.9,直接伪造版本通过</description>
     </item>
     
     <item>
@@ -118,7 +127,7 @@ Chrome ，铬，元素周期表 24 号元素。 镀铬是一种在金属上电�
       
       <guid>https://blog.peterfile.top/post/rdp/</guid>
       <description>需求 在WIndows Server 服务器上进行剪映的自动化服务,需要用到 pyautogui 和 win32api
-解决  保持gui链接: 在远程桌面中创建 Close.bat 并输入  %1 mshta vbscript:CreateObject(&amp;#34;Shell.Application&amp;#34;).ShellExecute(&amp;#34;cmd.exe&amp;#34;,&amp;#34;/c %~s0::&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;runas&amp;#34;,1)(window.close)&amp;amp;&amp;amp;exit for /f &amp;#34;skip=1 tokens=3&amp;#34; %%s in (&amp;#39;query user %USERNAME%&amp;#39;) do ( %windir%\System32\tscon.exe %%s /dest:console ) 即可在断开RDP的情况下保持Gui 但是会自动最小化务必在代码中把需要调试的gui应用置于前端,否则无法识别</description>
+解决 保持gui链接: 在远程桌面中创建 Close.bat 并输入 %1 mshta vbscript:CreateObject(&amp;#34;Shell.Application&amp;#34;).ShellExecute(&amp;#34;cmd.exe&amp;#34;,&amp;#34;/c %~s0 ::&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;runas&amp;#34;,1)(window.close)&amp;amp;&amp;amp;exit for /f &amp;#34;skip=1 tokens=3&amp;#34; %%s in (&amp;#39;query user %USERNAME%&amp;#39;) do ( %windir%\System32\tscon.exe %%s /dest:console ) 即可在断开RDP的情况下保持Gui 但是会自动最小化务必在代码中把需要调试的gui应用置于前端,否则无法识别</description>
     </item>
     
     <item>
@@ -159,7 +168,7 @@ ps -ef|grep X 链接RDP 从某种角度而言,你可以通过rdesktop远程保�
       <guid>https://blog.peterfile.top/post/tarpeia/</guid>
       <description>闲来无事看罗马史，有一个非常有意思的故事 主人公叫塔培亚
 先给个维基百科的link
- In Roman mythology, Tarpeia (/tɑːrˈpiːə/), daughter of the Roman commander Spurius Tarpeius, was a Vestal virgin who betrayed the city of Rome to the Sabines at the time of their women&amp;rsquo;s abduction for what she thought would be a reward of jewelry. She was instead crushed to death and her body cast from the southern cliff of Rome&amp;rsquo;s Capitoline Hill, thereafter called after her the Tarpeian Rock (Rupes Tarpeia).</description>
+In Roman mythology, Tarpeia (/tɑːrˈpiːə/), daughter of the Roman commander Spurius Tarpeius, was a Vestal virgin who betrayed the city of Rome to the Sabines at the time of their women&amp;rsquo;s abduction for what she thought would be a reward of jewelry. She was instead crushed to death and her body cast from the southern cliff of Rome&amp;rsquo;s Capitoline Hill, thereafter called after her the Tarpeian Rock (Rupes Tarpeia).</description>
     </item>
     
     <item>
@@ -169,7 +178,7 @@ ps -ef|grep X 链接RDP 从某种角度而言,你可以通过rdesktop远程保�
       
       <guid>https://blog.peterfile.top/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AFasoul/</guid>
       <description>我一直都是一个魂啊😇 不得不说，Asoul已经逐步“出圈”，走向了公众视野，有以下几点能看出来
- 和KFC，Keep等品牌的合作 获得有关媒体的关注 有一定的粉丝基数和购买力 互联网上的“梗”  不管承认与否，Asoul初衷其实是增强版的爱欲经济学，但是和传统偶像机制又有很大的不同，具体区别其实很多视频都详尽地概括了
+和KFC，Keep等品牌的合作 获得有关媒体的关注 有一定的粉丝基数和购买力 互联网上的“梗” 不管承认与否，Asoul初衷其实是增强版的爱欲经济学，但是和传统偶像机制又有很大的不同，具体区别其实很多视频都详尽地概括了
 但是还有些不一样，Asoul属于是二次元，追这玩意的人心态和真人追星还不一样，从设定来看这玩意还夹杂着成长粉(我也算是这类的)
 这也是很多一个魂都是原来拉拉人的原因，从这五个人能看出当年慕斯的影子
 除此之外直播形式又吸引了一波陪伴粉，由于工作，外表，性格原因，他们自带“社死”属性，甚至AvA向晚也是社死老嗨。观众很容易就能共情，也很让人动容
@@ -185,8 +194,20 @@ ps -ef|grep X 链接RDP 从某种角度而言,你可以通过rdesktop远程保�
       
       <guid>https://blog.peterfile.top/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/</guid>
       <description>深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图
-Part1:摆脱官方登陆器 学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。第一种方法:沙盒(SandBox) 例如在使用SandBoxie时可以绕过系统的检测，愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。第二种方法:第三方客户端 在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。安利一个我自己写的客户端: Srun boxies ，用pyqt5+html写的，ui还不错，至少目前我还在维护对于第三方客户端，没有热点共享限制，enjoy。
-Part2:自己写个客户端 请不要害怕，客户端是可以自己写的。第一步:我的校园网是什么上网方式? 简单介绍两种上网方法:PPPOE和Portal认证PPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。Portal:其实是DHCP的一个变种，即设备在连接网络时，交换机(路由)会分配一个IP地址，但是此时还不能联网，你需要web认证，这种好处是全平台通用。并且适合抓包第一点五步:没有漏洞可言 事实上:绕过校园网有很多方法，例如udp53端口，可惜我校直接封掉53，况且用tcp转发udp端口也许会造成堵塞，体验并不好第二步:抓你就完事了 抓包，是的，最简单的方法。抓包方法很多，这里分别介绍手机和电脑的两种方法手机:
+Part1:摆脱官方登陆器 学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。
+第一种方法:沙盒(SandBox) 例如在使用SandBoxie时可以绕过系统的检测，
+愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。
+除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。
+第二种方法:第三方客户端 在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。
+安利一个我自己写的客户端: Srun boxies ，用pyqt5+html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。
+Part2:自己写个客户端 请不要害怕，客户端是可以自己写的。
+第一步:我的校园网是什么上网方式? 简单介绍两种上网方法:PPPOE和Portal认证
+PPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。
+Portal:其实是DHCP的一个变种，即设备在连接网络时，交换机(路由)会分配一个IP地址，但是此时还不能联网，你需要web认证，这种好处是全平台通用。并且适合抓包
+第一点五步:没有漏洞可言 事实上:绕过校园网有很多方法，例如udp53端口，可惜我校直接封掉53，况且用tcp转发udp端口也许会造成堵塞，体验并不好
+第二步:抓你就完事了 抓包，是的，最简单的方法。
+抓包方法很多，这里分别介绍手机和电脑的两种方法
+手机:
 抓包软件选择了HttpCanary,酷友的一个作品。打开之后限制抓包软件为登陆器 如图所示
 之后开始抓包(模拟正常登陆)，软件会列出所有数据传输
 每个包都查看请求和响应，终于我们找到了我们想要的
@@ -204,7 +225,7 @@ drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不
 返回值为login_ok 即表示登陆成功
 第三步:复现
 打开cmd，用curl命令发送请求包，
- curl -d &amp;quot;action=login&amp;amp;username=%7BSRUN3%7D%0D%0A645%3B67454657&amp;amp;password=7ccAAcc99cc9&amp;amp;drop=0&amp;amp;pop=1&amp;amp;type=2&amp;amp;n=117&amp;amp;mbytes=0&amp;amp;minutes=0&amp;amp;ac_id=1&amp;amp;mac=00%3a2b%3a67%3a5b%3a56%3a2e&amp;quot; http://172.16.154.130/cgi-bin/srun_portal 发送请求
+curl -d &amp;#34;action=login&amp;amp;username=%7BSRUN3%7D%0D%0A645%3B67454657&amp;amp;password=7ccAAcc99cc9&amp;amp;drop=0&amp;amp;pop=1&amp;amp;type=2&amp;amp;n=117&amp;amp;mbytes=0&amp;amp;minutes=0&amp;amp;ac_id=1&amp;amp;mac=00%3a2b%3a67%3a5b%3a56%3a2e&amp;#34; http://172.16.154.130/cgi-bin/srun_portal 发送请求
 得到
 我这个路由器正在登陆，so……当然如果登陆成功应该是login_ok
 这个时候，你就可以用各种各样的语言写各种各样的客户端了!
@@ -215,13 +236,7 @@ drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不
 在了解了登陆模式之后，我们还知道默认的校园网密码为”123456″
 账号为学号(年级+院系+班级号)
 所以我们大可以跑全校校园网密码 一点微小的贡献
-原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s
-我校网速限制为丧心病狂的2.5mb/s，在这种情况下，大约三台设备同时连接，整个网(或者说账号)就崩掉了。下载个游戏有时候就要一天。加载缓慢就是经常的事.于是，多拨！
-如果你是pppoe模式，恭喜你，随便一搜就有大把教程。我不赘述
-但如果你是portal模式，可以看一眼我的教程，也许会对你有所启发
-现在，我们有了全校账号，和验证模式
-现在我们需要一个路由。我们用的是newwifi3(mt7621芯片，刷啥都可以)刷上了openwrt
-也就是说，我们要让路由器模拟我们的登陆操作，并且要多条线路模拟，模拟之后，我们需要多合一</description>
+原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s</description>
     </item>
     
     <item>
@@ -239,8 +254,13 @@ drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不
       <pubDate>Sat, 09 Oct 2021 08:56:39 +0800</pubDate>
       
       <guid>https://blog.peterfile.top/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/</guid>
-      <description>Aria2 下载代理踩坑指南 需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 Part1:实验 代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。v2ray的系统代理也无法走ariaPart2:解决 思路:把socket代理转换为http的二级代理sudo apt-get install privoxy sudo gedit /etc/privoxy/config 编辑配置文件，设置代理端口
-- listen-address localhost:8118 + #listen-address localhost:8118 forward-socks5t / 127.0.0.1:1080 . //不要忘记&amp;quot;.&amp;quot;，除此之外，端口根据实际更改 listen-address 127.0.0.1:8118 sudo service privoxy restart //重启服务 Part4:验证 1:Firefox验证2：终端验证export http_proxy=&#39;http://127.0.0.1:8118&#39; export https_proxy=$http_proxy curl ip.gs ///203.218.253.29 3：设置代理
+      <description>Aria2 下载代理踩坑指南 需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 Part1:实验 代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。
+v2ray的系统代理也无法走aria
+Part2:解决 思路:把socket代理转换为http的二级代理
+sudo apt-get install privoxy sudo gedit /etc/privoxy/config 编辑配置文件，设置代理端口
+- listen-address localhost:8118 + #listen-address localhost:8118 forward-socks5t / 127.0.0.1:1080 . //不要忘记&amp;#34;.&amp;#34;，除此之外，端口根据实际更改 listen-address 127.0.0.1:8118 sudo service privoxy restart //重启服务 Part4:验证 1:Firefox验证
+2：终端验证
+export http_proxy=&amp;#39;http://127.0.0.1:8118&amp;#39; export https_proxy=$http_proxy curl ip.gs ///203.218.253.29 3：设置代理
 `aria2c --conf-path=&amp;quot;/home/kan/downloads/aria2.conf&amp;quot; –http-proxy=&amp;quot;http://127.0.0.1:8118&amp;quot;` </description>
     </item>
     
@@ -250,7 +270,9 @@ drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不
       <pubDate>Sat, 09 Oct 2021 08:49:39 +0800</pubDate>
       
       <guid>https://blog.peterfile.top/post/rtl8821ce/</guid>
-      <description>Rtl8821ce网卡 Linux驱动安装的各种坑 给室友的电脑装上Linux之后，整个系统流畅度提升了不知一点半点但是有个致命的bug:不能用官方的Pcie网卡，虽然外接免驱网卡可以使用，但是对于一个只有两个USB接口的电脑来说，就显得相形见绌了。于是开整。Step1:找驱动 搜索引擎随便搜一下，就有很多，例如 这个 ，但是在安装过程中报错了qwq 根据 修改教程 把
+      <description>Rtl8821ce网卡 Linux驱动安装的各种坑 给室友的电脑装上Linux之后，整个系统流畅度提升了不知一点半点
+但是有个致命的bug:不能用官方的Pcie网卡，虽然外接免驱网卡可以使用，但是对于一个只有两个USB接口的电脑来说，就显得相形见绌了。于是开整。
+Step1:找驱动 搜索引擎随便搜一下，就有很多，例如 这个 ，但是在安装过程中报错了qwq 根据 修改教程 把
 rtl8821ce/os_dep/linux/os_intfs.c
 中原有的
 @@ -1323,9 +1323,8 @@ unsigned int rtw_classify8021d(struct sk_buff *skb) static u16 rtw_select_queue(struct net_device *dev, struct sk_buff *skb -#if LINUX_VERSION_CODE &amp;gt;= KERNEL_VERSION(3, 13, 0) ,struct net_device *sb_dev -#endif +	,select_queue_fallback_t fallback ) { _adapter	*padapter = rtw_netdev_priv(dev); 改为
@@ -263,7 +285,9 @@ rtl8821ce/os_dep/linux/os_intfs.c
       <pubDate>Fri, 08 Oct 2021 17:29:27 +0800</pubDate>
       
       <guid>https://blog.peterfile.top/post/2hugo/</guid>
-      <description>静态博客  是的，又换成静态博客了.有点逆潮流的趋势，为什么换回了静态呢主要有一下几方面的考量 可以直接部署到Vercel等Severless平台 安全性更强 奥卡姆剃刀原理 服务器的维护麻烦从Asdb的前期开发和维护也能管中窥豹   而且因为前几天Let&amp;rsquo;s Encypt的SSL证书寄了，导致我现在主域名进不去，管理的话也得跳转主域名，十分复杂。所以对Wordpress和某些Linux管理系统印象不好。内容至上才是正确的</description>
+      <description>静态博客 是的，又换成静态博客了.有点逆潮流的趋势，为什么换回了静态呢 主要有一下几方面的考量
+可以直接部署到Vercel等Severless平台 安全性更强 奥卡姆剃刀原理 服务器的维护麻烦 从Asdb的前期开发和维护也能管中窥豹 而且因为前几天Let&amp;rsquo;s Encypt的SSL证书寄了，导致我现在主域名进不去，管理的话也得跳转主域名，十分复杂。所以对Wordpress和某些Linux管理系统印象不好。
+内容至上才是正确的</description>
     </item>
     
   </channel>
