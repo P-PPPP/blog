@@ -29,9 +29,6 @@
     <loc>https://blog.peterfile.top/post/chrome_in_firefox/</loc>
     <lastmod>2022-03-12T21:41:42+08:00</lastmod>
   </url><url>
-    <loc>https://blog.peterfile.top/post/rulestobreak/</loc>
-    <lastmod>2022-03-03T07:28:59+08:00</lastmod>
-  </url><url>
     <loc>https://blog.peterfile.top/post/winebcut/</loc>
     <lastmod>2021-12-26T22:03:15+08:00</lastmod>
   </url><url>
@@ -69,6 +66,8 @@
     <lastmod>2021-10-08T17:27:54+08:00</lastmod>
   </url><url>
     <loc>https://blog.peterfile.top/categories/</loc>
+  </url><url>
+    <loc>https://blog.peterfile.top/search/</loc>
   </url><url>
     <loc>https://blog.peterfile.top/tags/</loc>
   </url>

@@ -5,8 +5,8 @@
     <link>https://blog.peterfile.top/</link>
     <description>Recent content on P_P Blog</description>
     <image>
-      <url>https://blog.peterfile.top/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://blog.peterfile.top/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg</url>
+      <link>https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 16 Jun 2022 18:01:29 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/index.xml" rel="self" type="application/rss+xml" />
@@ -87,16 +87,6 @@ Chrome ，铬，元素周期表 24 号元素。 镀铬是一种在金属上电�
 视口周围的浏览器用户界面叫什么呢？早期人类就假借了“闪亮的镀铬装饰物”这个意象，把这些装饰物称为“铬”，
 所以 Firefox 中有一个chrome://协议用来处理一些和浏览器用户界面相关的工作，Chrome 浏览器则直接用了这个名字，意思可能是“看网页的闪亮用户界面”。
 The phrase chrome has been used by Mozilla since long before Google Chrome came on the market. Typically the phrase &amp;ldquo;Chrome&amp;rdquo; referred to all the area around your viewport, but not the viewport itself. Sort of like the chrome plating some cars have around their windscreens or headlights. See here for more details - but no; nothing to do with Google Chrome.</description>
-    </item>
-    
-    <item>
-      <title>规则是用来打破的</title>
-      <link>https://blog.peterfile.top/post/rulestobreak/</link>
-      <pubDate>Thu, 03 Mar 2022 07:28:59 +0800</pubDate>
-      
-      <guid>https://blog.peterfile.top/post/rulestobreak/</guid>
-      <description>规则是用来打破的 2022.03.03 俄罗斯向乌克兰进行特别行动的一周。世界格局在一周内瞬息变幻。
-全球进入后疫情时代以来，国际之间的摩擦貌似比以往更尖锐了许多。全球以冷战后建立的秩序即将被推翻，事实上，正在被推翻。</description>
     </item>
     
     <item>
@@ -271,11 +261,10 @@ rtl8821ce/os_dep/linux/os_intfs.c
       <pubDate>Fri, 08 Oct 2021 17:27:54 +0800</pubDate>
       
       <guid>https://blog.peterfile.top/about/</guid>
-      <description>About Me A Thinking Reed
-Depoly Info Powered By Hugo.
-Copyright By PeterPei.
-Depolyed on Vercel.</description>
+      <description>About Me A Thinking Reed Depoly Info Powered By Hugo.
+遵循 CC 4.0 BY-SA 版权协议 </description>
     </item>
+    
     
   </channel>
 </rss>
