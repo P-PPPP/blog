@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://blog.peterfile.top/sitemap.xml
+Sitemap: https://blog.peterpei.xyz/sitemap.xml

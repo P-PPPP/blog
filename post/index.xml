@@ -2,56 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on P_P Blog</title>
-    <link>https://blog.peterfile.top/post/</link>
+    <link>https://blog.peterpei.xyz/post/</link>
     <description>Recent content in Posts on P_P Blog</description>
     <image>
       <url>https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg</url>
       <link>https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Jun 2022 18:01:29 +0800</lastBuildDate><atom:link href="https://blog.peterfile.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jun 2022 15:57:42 +0800</lastBuildDate><atom:link href="https://blog.peterpei.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Moved :)</title>
+      <link>https://blog.peterpei.xyz/post/changedomain/</link>
+      <pubDate>Thu, 30 Jun 2022 15:57:42 +0800</pubDate>
+      
+      <guid>https://blog.peterpei.xyz/post/changedomain/</guid>
+      <description>*.peterfile.top -&amp;gt; *.peterpei.xyz Quite expensive but cheap for first year.</description>
+    </item>
+    
     <item>
       <title>Say Goodbye 2 IE</title>
-      <link>https://blog.peterfile.top/post/byeie/</link>
+      <link>https://blog.peterpei.xyz/post/byeie/</link>
       <pubDate>Thu, 16 Jun 2022 18:01:29 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/byeie/</guid>
+      <guid>https://blog.peterpei.xyz/post/byeie/</guid>
       <description>However IE Already Dead long time ago, cause nowhere 4 us to explore anymore.</description>
     </item>
     
     <item>
       <title>一块红布</title>
-      <link>https://blog.peterfile.top/post/apiceosredmap/</link>
+      <link>https://blog.peterpei.xyz/post/apiceosredmap/</link>
       <pubDate>Sat, 21 May 2022 23:27:52 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/apiceosredmap/</guid>
+      <guid>https://blog.peterpei.xyz/post/apiceosredmap/</guid>
       <description>那天是你用一块红布 蒙住我双眼也蒙住了天 你问我看见了什么 我说我看见了幸福 这个感觉真让我舒服 它让我忘掉我没地儿住 你问我还要去何方 我说要上你的路 看不见你也看不见路 我的手也被你攥住 你问我在想什么 我说我要你做主 我感觉你不是铁 却像铁一样的强和烈 我感觉你身上有血 因为你的手是热呼呼 我感觉这不是荒野 却看见这儿的土地已经干裂 我感觉我要喝点水 可你的嘴将我的嘴堵住 我不能走我也不能哭 因为我的身体现在已经干枯 我要永远这样陪伴着你 因为我最知道你的痛苦 </description>
     </item>
     
     <item>
       <title>Bitcoin:Is that a coin?</title>
-      <link>https://blog.peterfile.top/post/bitcoin-isthatacoin/</link>
+      <link>https://blog.peterpei.xyz/post/bitcoin-isthatacoin/</link>
       <pubDate>Wed, 04 May 2022 22:27:46 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/bitcoin-isthatacoin/</guid>
+      <guid>https://blog.peterpei.xyz/post/bitcoin-isthatacoin/</guid>
       <description>So recently,refer to the international surroundings. I decide to try `Bitcoin`. It is not fresh to us as it made its many `15 minutes`.Make many nobody into billionaires. We cannot deny that this mathmatics has been endowed as finacial meanings. The first time i know Bitcoin, or furtherly, Encrypted Coin and Block Chains is in 2019 when i was gradulated from senior high. A Tv series called `Sillicon` (Some Nerd change the world.</description>
     </item>
     
     <item>
       <title>GoFaster</title>
-      <link>https://blog.peterfile.top/post/gofaster/</link>
+      <link>https://blog.peterpei.xyz/post/gofaster/</link>
       <pubDate>Sat, 16 Apr 2022 22:59:32 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/gofaster/</guid>
+      <guid>https://blog.peterpei.xyz/post/gofaster/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>修复`Node`出错</title>
-      <link>https://blog.peterfile.top/post/fixnodeinopenwrt/</link>
+      <link>https://blog.peterpei.xyz/post/fixnodeinopenwrt/</link>
       <pubDate>Sat, 16 Apr 2022 22:50:14 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/fixnodeinopenwrt/</guid>
+      <guid>https://blog.peterpei.xyz/post/fixnodeinopenwrt/</guid>
       <description>重装软路由系统之后发现无法使用网易云的流媒体解锁服务,使用/etc/init.d/unblockneteasemusic info 发现其实是包裹了 UnblockNeteaseMusic 的预编译版本以适应所有平台
 输入node 发现报错
 # root @ OpenWrt in /usr/share/unblockneteasemusic/core [22:48:04] $ node app.js Error relocating /usr/bin/node: _ZNSt19_Sp_make_shared_tag5_S_eqERKSt9type_info: symbol not found Error relocating /usr/bin/node: _ZNSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEC1Ev: symbol not found Error relocating /usr/bin/node: _ZSt28__throw_bad_array_new_lengthv: symbol not found Error relocating /usr/bin/node: _ZNSt18basic_stringstreamIcSt11char_traitsIcESaIcEEC1Ev: symbol not found 推测应该是node执行文件寄了,键入apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ nodejs 修复(bash 貌似也会G 反正一个道理)
@@ -62,10 +71,10 @@ $ node -v v16.14.2 </description>
     
     <item>
       <title>老无所依</title>
-      <link>https://blog.peterfile.top/post/nocountryforoldmen/</link>
+      <link>https://blog.peterpei.xyz/post/nocountryforoldmen/</link>
       <pubDate>Fri, 15 Apr 2022 21:35:20 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/nocountryforoldmen/</guid>
+      <guid>https://blog.peterpei.xyz/post/nocountryforoldmen/</guid>
       <description>BiliBili_Link
 另一句有意思的话，是杀人狂安东对路维林的老婆说的，他让女人猜硬币决定她自己能活还是必死，女人很慌乱，说硬币只是硬币，决定事情的还是你。
 杀手不高兴，说：这个硬币来到这里，和我来到这里的方式，没有区别的。这话太精彩，科恩兄弟电影里“无所依”的主题背后，就是这句话在作崇。这话的意思是，在世界里，在生活中，人和任何一样渺小的东西一样，走向都是偶然的，这偶然有逻辑，一件事情确有另一件事情的引导，但逻辑不掌握在人手里，掌握在上帝那只偶然的手里。所以科恩兄弟的电影里总是一幅事与愿违的面貌，事情总按照希望的反方向行走，而且走得理直气壮，因为总有必然而不期然的巧合要发生。
@@ -76,10 +85,10 @@ $ node -v v16.14.2 </description>
     
     <item>
       <title>Chrome_in_Firefox</title>
-      <link>https://blog.peterfile.top/post/chrome_in_firefox/</link>
+      <link>https://blog.peterpei.xyz/post/chrome_in_firefox/</link>
       <pubDate>Sat, 12 Mar 2022 21:41:42 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/chrome_in_firefox/</guid>
+      <guid>https://blog.peterpei.xyz/post/chrome_in_firefox/</guid>
       <description>请在Firefox地址栏输入 chrome://branding/content/about-logo.png
 很神奇对吧,为什么在Firefox浏览器中出现了Chrome的schma呢?
 Chrome ，铬，元素周期表 24 号元素。 镀铬是一种在金属上电镀一层薄薄的铬层的工艺，其往往可以用于装饰或者作为金属的保护层，是一种让金属变得亮闪闪的工艺，很多汽车会用这个工艺制作车窗和车灯周围的装饰条。
@@ -91,10 +100,10 @@ The phrase chrome has been used by Mozilla since long before Google Chrome came 
     
     <item>
       <title>在Linux上通过Wine使用必剪客户端</title>
-      <link>https://blog.peterfile.top/post/winebcut/</link>
+      <link>https://blog.peterpei.xyz/post/winebcut/</link>
       <pubDate>Sun, 26 Dec 2021 22:03:15 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/winebcut/</guid>
+      <guid>https://blog.peterpei.xyz/post/winebcut/</guid>
       <description>应用方法可预见地宽阔了起来。
 剪映和必剪客户端组成分析 两个都使用了ELectron封装,Gpu加速,使用D3d + ffmpeg 作为后端。 对于electron,是基于C++开发的支持nodejs的封装工具.也就是理论上和实际上,这两个应用都能原生支持Linux 在Linux上可以用OpenGl + ffmpeg 作为其后端
 必剪移植过程 按照官网安装Wine和Winetricks (Wine &amp;ndash;version 7.0/winetricks latest) 安装 D3dx,.Net,Vs C++依赖 安装 Wine-mono 和 Wine-geeko 下载必剪Windows客户端 尝试使用Wine BCUT.exe 运行安装程序. 启动 错误处理 X Error of failed request: GLXBadFBConfig Major opcode of failed request: 153 (GLX) Minor opcode of failed request: 0 () Serial number of failed request: 228 Current serial number in output stream: 228 原因是Mesa问题,解决:
@@ -103,20 +112,20 @@ MESA_GL_VERSION_OVERRIDE=9.9,直接伪造版本通过</description>
     
     <item>
       <title>RDP 在无显示器的环境下进行gui调试</title>
-      <link>https://blog.peterfile.top/post/rdp/</link>
+      <link>https://blog.peterpei.xyz/post/rdp/</link>
       <pubDate>Thu, 09 Dec 2021 09:28:42 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/rdp/</guid>
+      <guid>https://blog.peterpei.xyz/post/rdp/</guid>
       <description>需求 在WIndows Server 服务器上进行剪映的自动化服务,需要用到 pyautogui 和 win32api
 解决 保持gui链接: 在远程桌面中创建 Close.bat 并输入 %1 mshta vbscript:CreateObject(&amp;#34;Shell.Application&amp;#34;).ShellExecute(&amp;#34;cmd.exe&amp;#34;,&amp;#34;/c %~s0 ::&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;runas&amp;#34;,1)(window.close)&amp;amp;&amp;amp;exit for /f &amp;#34;skip=1 tokens=3&amp;#34; %%s in (&amp;#39;query user %USERNAME%&amp;#39;) do ( %windir%\System32\tscon.exe %%s /dest:console ) 即可在断开RDP的情况下保持Gui 但是会自动最小化务必在代码中把需要调试的gui应用置于前端,否则无法识别</description>
     </item>
     
     <item>
       <title>无显示器调试</title>
-      <link>https://blog.peterfile.top/post/nomonitor/</link>
+      <link>https://blog.peterpei.xyz/post/nomonitor/</link>
       <pubDate>Thu, 09 Dec 2021 09:23:45 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/nomonitor/</guid>
+      <guid>https://blog.peterpei.xyz/post/nomonitor/</guid>
       <description>思路借助了 这个 其实就是通过 xvfb 在Linux 的 DISPLAY 变量输出到虚拟显示器
 sudo apt-get install xserver-xorg-video-dummy sudo apt install xvfb x11vnc apt install lightdm export DISPLAY=:1 Xvfb :1 -screen 0 1920x1080x16 &amp;amp; exec lightdm-session &amp;amp; apt install rdesktop kill
 ps -ef|grep X 链接RDP 从某种角度而言,你可以通过rdesktop远程保持Windows Server 的链接,即使没有一个显示器 rdesktop IP -u USERNAME -p PASSWORD -g 1920x1080
@@ -125,28 +134,28 @@ ps -ef|grep X 链接RDP 从某种角度而言,你可以通过rdesktop远程保�
     
     <item>
       <title>Hangover</title>
-      <link>https://blog.peterfile.top/post/hangover/</link>
+      <link>https://blog.peterpei.xyz/post/hangover/</link>
       <pubDate>Thu, 21 Oct 2021 17:45:33 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/hangover/</guid>
+      <guid>https://blog.peterpei.xyz/post/hangover/</guid>
       <description>Build Step1 安装必要依赖 sudo apt install gcc-mingw-w64 mingw-w64-common mingw-w64-i686-dev mingw-w64-x86-64-dev binutils-mingw-w64-i686 binutils-mingw-w64-x86-64 gcc-mingw-w64-base gcc-mingw-w64-i686 gcc-mingw-w64-x86-64 #gcc的依赖 sudo apt install libglib2.0-* # Qemu Dependences #sudo apt install clang-6.0 libclang-6.0-dev libclang-common-6.0-dev libclang1-6.0 libclang1-6.0-dbg sudo apt install gcc-mingw-w64 libasound2-dev libpulse-dev libdbus-1-dev libfontconfig-dev libfreetype-dev libgnutls28-dev libjpeg62-turbo-dev libpng-dev libtiff-dev libgl-dev libunwind-dev libxrender libxml2 libxslt libgnutls libjpeg #wine依赖 Step2 编译 编译 Clang5.05 #下载llvm源码 wget http://llvm.org/releases/5.0.2/llvm-5.0.2.src.tar.xz #解压llvm tar xf llvm-5.0.2.src.tar.xz &amp;amp;&amp;amp; mv llvm-5.0.2.src llvm #下载Clang源码 cd llvm/tools wget http://llvm.</description>
     </item>
     
     <item>
       <title>GetPip</title>
-      <link>https://blog.peterfile.top/post/getpip/</link>
+      <link>https://blog.peterpei.xyz/post/getpip/</link>
       <pubDate>Tue, 19 Oct 2021 15:23:47 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/getpip/</guid>
+      <guid>https://blog.peterpei.xyz/post/getpip/</guid>
       <description>root@OpenWrt:/# curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py root@OpenWrt:/# python3 get-pip.py --force-reinstall </description>
     </item>
     
     <item>
       <title>Tarpeia|塔培亚</title>
-      <link>https://blog.peterfile.top/post/tarpeia/</link>
+      <link>https://blog.peterpei.xyz/post/tarpeia/</link>
       <pubDate>Fri, 15 Oct 2021 11:30:44 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/tarpeia/</guid>
+      <guid>https://blog.peterpei.xyz/post/tarpeia/</guid>
       <description>闲来无事看罗马史，有一个非常有意思的故事 主人公叫塔培亚
 先给个维基百科的link
 In Roman mythology, Tarpeia (/tɑːrˈpiːə/), daughter of the Roman commander Spurius Tarpeius, was a Vestal virgin who betrayed the city of Rome to the Sabines at the time of their women&amp;rsquo;s abduction for what she thought would be a reward of jewelry. She was instead crushed to death and her body cast from the southern cliff of Rome&amp;rsquo;s Capitoline Hill, thereafter called after her the Tarpeian Rock (Rupes Tarpeia).</description>
@@ -154,10 +163,10 @@ In Roman mythology, Tarpeia (/tɑːrˈpiːə/), daughter of the Roman commander 
     
     <item>
       <title>深澜折腾指北</title>
-      <link>https://blog.peterfile.top/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/</link>
+      <link>https://blog.peterpei.xyz/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/</link>
       <pubDate>Sat, 09 Oct 2021 09:01:52 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/</guid>
+      <guid>https://blog.peterpei.xyz/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/</guid>
       <description>深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图
 Part1:摆脱官方登陆器 学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。
 第一种方法:沙盒(SandBox) 例如在使用SandBoxie时可以绕过系统的检测，
@@ -206,19 +215,19 @@ curl -d &amp;#34;action=login&amp;amp;username=%7BSRUN3%7D%0D%0A645%3B67454657&a
     
     <item>
       <title>Aria2配置</title>
-      <link>https://blog.peterfile.top/post/aria2%E9%85%8D%E7%BD%AE/</link>
+      <link>https://blog.peterpei.xyz/post/aria2%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 09 Oct 2021 08:59:41 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/aria2%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://blog.peterpei.xyz/post/aria2%E9%85%8D%E7%BD%AE/</guid>
       <description>aria2配置 #aria2c --conf-path=/www/wwwroot/aria2/aria2.conf #用户名 #rpc-user=user #密码 #rpc-passwd=passwd #上面的认证方式不建议使用,建议使用下面的token方式 #设置加密的密钥 #rpc-secret=token #允许rpc enable-rpc=true #允许所有来源, web界面跨域权限需要 rpc-allow-origin-all=true #允许外部访问，false的话只监听本地端口 rpc-listen-all=true #RPC端口, 仅当默认端口被占用时修改 rpc-listen-port=6800 #最大同时下载数(任务数), 路由建议值: 3 max-concurrent-downloads=5 #断点续传 continue=true #同服务器连接数 max-connection-per-server=5 #最小文件分片大小, 下载线程数上限取决于能分出多少片, 对于小文件重要 min-split-size=10M #单文件最大线程数, 路由建议值: 5 split=10 #下载速度限制 max-overall-download-limit=0 #单文件速度限制 max-download-limit=0 #上传速度限制 max-overall-upload-limit=0 #单文件速度限制 max-upload-limit=0 #断开速度过慢的连接 #lowest-speed-limit=0 #验证用，需要1.16.1之后的release版本 #referer=* #文件保存路径, 默认为当前启动位置 dir=/www/wwwroot/aria2/download #文件缓存, 使用内置的文件缓存, 如果你不相信Linux内核文件缓存和磁盘内置缓存时使用 #disk-cache=0 #另一种Linux文件缓存方式 #enable-mmap=true #文件预分配, 能有效降低文件碎片, 提高磁盘性能. 缺点是预分配时间较长 file-allocation=prealloc ## BT/PT下载相关 ## # 当下载的是一个种子(以.torrent结尾)时, 自动开始BT任务, 默认:true follow-torrent=true # 客户端伪装, PT需要 peer-id-prefix=-TR2770- user-agent=Transmission/2.</description>
     </item>
     
     <item>
       <title>Aria2下载代理</title>
-      <link>https://blog.peterfile.top/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/</link>
+      <link>https://blog.peterpei.xyz/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/</link>
       <pubDate>Sat, 09 Oct 2021 08:56:39 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/</guid>
+      <guid>https://blog.peterpei.xyz/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/</guid>
       <description>Aria2 下载代理踩坑指南 需要在aria2下载时进行代理，于是一开始在v2ray中可以设置代理 Part1:实验 代理设置完成后在Firefox中添加，发现无法正常使用Http代理，而socket5代理正常使用。
 v2ray的系统代理也无法走aria
 Part2:解决 思路:把socket代理转换为http的二级代理
@@ -231,10 +240,10 @@ export http_proxy=&amp;#39;http://127.0.0.1:8118&amp;#39; export https_proxy=$ht
     
     <item>
       <title>Rtl8821ce网卡</title>
-      <link>https://blog.peterfile.top/post/rtl8821ce/</link>
+      <link>https://blog.peterpei.xyz/post/rtl8821ce/</link>
       <pubDate>Sat, 09 Oct 2021 08:49:39 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/rtl8821ce/</guid>
+      <guid>https://blog.peterpei.xyz/post/rtl8821ce/</guid>
       <description>Rtl8821ce网卡 Linux驱动安装的各种坑 给室友的电脑装上Linux之后，整个系统流畅度提升了不知一点半点
 但是有个致命的bug:不能用官方的Pcie网卡，虽然外接免驱网卡可以使用，但是对于一个只有两个USB接口的电脑来说，就显得相形见绌了。于是开整。
 Step1:找驱动 搜索引擎随便搜一下，就有很多，例如 这个 ，但是在安装过程中报错了qwq 根据 修改教程 把
@@ -246,10 +255,10 @@ rtl8821ce/os_dep/linux/os_intfs.c
     
     <item>
       <title>2Hugo</title>
-      <link>https://blog.peterfile.top/post/2hugo/</link>
+      <link>https://blog.peterpei.xyz/post/2hugo/</link>
       <pubDate>Fri, 08 Oct 2021 17:29:27 +0800</pubDate>
       
-      <guid>https://blog.peterfile.top/post/2hugo/</guid>
+      <guid>https://blog.peterpei.xyz/post/2hugo/</guid>
       <description>静态博客 是的，又换成静态博客了.有点逆潮流的趋势，为什么换回了静态呢 主要有一下几方面的考量
 可以直接部署到Vercel等Severless平台 安全性更强 奥卡姆剃刀原理 服务器的维护麻烦 从Asdb的前期开发和维护也能管中窥豹 而且因为前几天Let&amp;rsquo;s Encypt的SSL证书寄了，导致我现在主域名进不去，管理的话也得跳转主域名，十分复杂。所以对Wordpress和某些Linux管理系统印象不好。
 内容至上才是正确的</description>
