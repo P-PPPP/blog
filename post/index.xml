@@ -9,7 +9,16 @@
       <link>https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 03 Aug 2022 21:26:13 +0800</lastBuildDate><atom:link href="https://blog.peterpei.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 22:40:24 +0800</lastBuildDate><atom:link href="https://blog.peterpei.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python_Thread_Target</title>
+      <link>https://blog.peterpei.xyz/post/python_thread_target/</link>
+      <pubDate>Mon, 19 Sep 2022 22:40:24 +0800</pubDate>
+      
+      <guid>https://blog.peterpei.xyz/post/python_thread_target/</guid>
+      <description>https://blog.csdn.net/weixin_43356308/article/details/114000042</description>
+    </item>
+    
     <item>
       <title>谈谈海峡与民粹</title>
       <link>https://blog.peterpei.xyz/post/aboutthestrait/</link>
@@ -83,7 +92,7 @@ But People Are Bloody Flesh. Man can be destroyed but not defeated.</description
       <pubDate>Sat, 16 Apr 2022 22:59:32 +0800</pubDate>
       
       <guid>https://blog.peterpei.xyz/post/gofaster/</guid>
-      <description> </description>
+      <description></description>
     </item>
     
     <item>
