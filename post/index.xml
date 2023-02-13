@@ -5,11 +5,21 @@
     <link>https://blog.peterpei.xyz/post/</link>
     <description>Recent content in Posts on P_P Blog</description>
     <image>
+      <title>P_P Blog</title>
       <url>https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg</url>
       <link>https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Sep 2022 22:40:24 +0800</lastBuildDate><atom:link href="https://blog.peterpei.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 09:30:04 +0800</lastBuildDate><atom:link href="https://blog.peterpei.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker迁移</title>
+      <link>https://blog.peterpei.xyz/post/dockertransfer/</link>
+      <pubDate>Sat, 15 Oct 2022 09:30:04 +0800</pubDate>
+      
+      <guid>https://blog.peterpei.xyz/post/dockertransfer/</guid>
+      <description>BusyBox v1.35.0 (2022-10-11 16:33:22 UTC) built-in shell (ash) _________ / /\ _ ___ ___ ___ / LE / \ | | | __| \| __| / DE / \ | |__| _|| |) | _| /________/ LE \ |____|___|___/|___| \ \ DE / \ LE \ / ------------------------------------------- \ DE \ / OpenWrt SNAPSHOT, r5226-f9a69f3d7 \________\/ ------------------------------------------- root@OpenWrt:~# /etc/init.d/dockerd stop root@OpenWrt:~# mkdir /mnt/big/docker root@OpenWrt:~# rsync -av /opt/docker /mnt/big/docker -ash: rsync: not found root@OpenWrt:~# rsync -av /opt/docker /mnt/big/docker sending incremental file list docker/ sent 67 bytes received 20 bytes 174.</description>
+    </item>
+    
     <item>
       <title>Python_Thread_Target</title>
       <link>https://blog.peterpei.xyz/post/python_thread_target/</link>
@@ -17,37 +27,6 @@
       
       <guid>https://blog.peterpei.xyz/post/python_thread_target/</guid>
       <description>https://blog.csdn.net/weixin_43356308/article/details/114000042</description>
-    </item>
-    
-    <item>
-      <title>谈谈海峡与民粹</title>
-      <link>https://blog.peterpei.xyz/post/aboutthestrait/</link>
-      <pubDate>Wed, 03 Aug 2022 21:26:13 +0800</pubDate>
-      
-      <guid>https://blog.peterpei.xyz/post/aboutthestrait/</guid>
-      <description>2022.08.02 23:30 (UTC-8) 左右，美国国会众议院议长 佩罗西抵达台湾，大陆内部媒体舆论发酵，但不理智的声音同样很多。
-也许你要反驳我，甚至给我扣上什么帽子。但我想请你在开始前思考几个问题
-佩罗西所搭乘的是军机吗？为什么她不能在台湾岛降落 根据“一国两制”政策，即在台遵守台湾岛内规章制度，佩罗西的飞机没有向台湾空管部门报备吗？ 任何一个国家、地区、组织，直接向美国四号人物开火，美国在一旁是准备拍手叫好吗？
-所以这架飞机是必然要降落的
-至于所谓的“打佩罗西飞机”这件事，完全是 @胡锡进 自己在一旁煽风点火的，巧了，这火还真烧着了。
-佩罗西在台湾岛内的讲话也几乎没有涉及到政治，大多都是些环保和平自由的屁话。
-与此同时，解放军开始在南海进行实弹射击演练。而再过几天，佩罗西就要回家睡大觉了。
-对于佩罗西和美国（最能代表利益的集团）而言，大陆向台湾省开火是完全不亏的操作,原因有下： 主要战场在海峡和台湾岛内，美国无需承担任何重建工作。 美国有地方卖自己产能过剩的导弹头（如果可能的话），还能牵制日本韩国，甚至北约。继续宣扬中国威胁论。以后东亚三国没办法再坐一起了。 全球舆论完全崩塌 你看，胡锡进这种三流媒体主编随口说说就能让全国人民都关注这破飞机，可见舆论战早都打的漫天飞了。
-然而令人感叹的是，我国的新闻工作者，还是too young ,too simple , sometimes naive!，在未来的战争中，最重要的是舆论和信息，它从关键影响到了士兵的士气、人民的信任、资本的支持。没有强信心的战争，是不会赢的。
-当然我们内部的中产陷阱也是值得注意的。
-现在来讲，最慌得反正不是我们，也不会是美利坚合众国（大不了还有欧洲和中东，土耳其和锡兰也是可以玩的，实在不行了墨西哥那边的南美也能踹两脚），那会是谁呢？反正你这大腿就来玩几天，总不能常驻吧。
-至于打不打的起来这种结果，实际上是无需担心的，因为胜负不是结果，而是一个漫长而又急需忍耐的过程。
-道阻且长</description>
-    </item>
-    
-    <item>
-      <title>Slience</title>
-      <link>https://blog.peterpei.xyz/post/slience/</link>
-      <pubDate>Sun, 10 Jul 2022 16:54:07 +0800</pubDate>
-      
-      <guid>https://blog.peterpei.xyz/post/slience/</guid>
-      <description>You Let People Keep Anger. While You Need People to keep Slient.
-But People Are Bloody Flesh. Man can be destroyed but not defeated.</description>
     </item>
     
     <item>
@@ -69,12 +48,12 @@ But People Are Bloody Flesh. Man can be destroyed but not defeated.</description
     </item>
     
     <item>
-      <title>一块红布</title>
+      <title>崔健-一块红布</title>
       <link>https://blog.peterpei.xyz/post/apiceosredmap/</link>
       <pubDate>Sat, 21 May 2022 23:27:52 +0800</pubDate>
       
       <guid>https://blog.peterpei.xyz/post/apiceosredmap/</guid>
-      <description>那天是你用一块红布 蒙住我双眼也蒙住了天 你问我看见了什么 我说我看见了幸福 这个感觉真让我舒服 它让我忘掉我没地儿住 你问我还要去何方 我说要上你的路 看不见你也看不见路 我的手也被你攥住 你问我在想什么 我说我要你做主 我感觉你不是铁 却像铁一样的强和烈 我感觉你身上有血 因为你的手是热呼呼 我感觉这不是荒野 却看见这儿的土地已经干裂 我感觉我要喝点水 可你的嘴将我的嘴堵住 我不能走我也不能哭 因为我的身体现在已经干枯 我要永远这样陪伴着你 因为我最知道你的痛苦 </description>
+      <description></description>
     </item>
     
     <item>
