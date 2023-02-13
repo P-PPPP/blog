@@ -1,10 +1,13 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>深澜折腾指北 | P_P Blog</title><meta name=keywords content><meta name=description content="深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图
 Part1:摆脱官方登陆器 学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。
 第一种方法:沙盒(SandBox) 例如在使用SandBoxie时可以绕过系统的检测，
 愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。
 除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。
 第二种方法:第三方客户端 在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。
-安利一个我自己写的客户端: Srun boxies ，用pyqt5+html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。
+安利一个我自己写的客户端: Srun boxies ，用pyqt5&#43;html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。
 Part2:自己写个客户端 请不要害怕，客户端是可以自己写的。
 第一步:我的校园网是什么上网方式? 简单介绍两种上网方法:PPPOE和Portal认证
 PPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。
@@ -30,7 +33,7 @@ drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不
 返回值为login_ok 即表示登陆成功
 第三步:复现
 打开cmd，用curl命令发送请求包，
-curl -d &#34;action=login&username=%7BSRUN3%7D%0D%0A645%3B67454657&password=7ccAAcc99cc9&drop=0&pop=1&type=2&n=117&mbytes=0&minutes=0&ac_id=1&mac=00%3a2b%3a67%3a5b%3a56%3a2e&#34; http://172.16.154.130/cgi-bin/srun_portal 发送请求
+curl -d &amp;#34;action=login&amp;amp;username=%7BSRUN3%7D%0D%0A645%3B67454657&amp;amp;password=7ccAAcc99cc9&amp;amp;drop=0&amp;amp;pop=1&amp;amp;type=2&amp;amp;n=117&amp;amp;mbytes=0&amp;amp;minutes=0&amp;amp;ac_id=1&amp;amp;mac=00%3a2b%3a67%3a5b%3a56%3a2e&amp;#34; http://172.16.154.130/cgi-bin/srun_portal 发送请求
 得到
 我这个路由器正在登陆，so……当然如果登陆成功应该是login_ok
 这个时候，你就可以用各种各样的语言写各种各样的客户端了!
@@ -39,16 +42,21 @@ curl -d &#34;action=login&username=%7BSRUN3%7D%0D%0A645%3B67454657&password=7ccA
 此时的n也是不同的233 这个应该是用户名加密
 当然，你还需要一点运气23333 Part3:白嫖使我快乐
 在了解了登陆模式之后，我们还知道默认的校园网密码为”123456″
-账号为学号(年级+院系+班级号)
+账号为学号(年级&#43;院系&#43;班级号)
 所以我们大可以跑全校校园网密码 一点微小的贡献
-原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s"><meta name=author content="PP"><link rel=canonical href=//blog.peterpei.xyz/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/><meta name=google-site-verification content="P_P Blog"><meta name=yandex-verification content="P_P Blog"><meta name=msvalidate.01 content="P_P Blog"><link crossorigin=anonymous href=/assets/css/stylesheet.62aa25427797f8efd87301a5b69795dc50df2dbe79a5fba0648cc7bb8dbcd7c9.css integrity="sha256-YqolQneX+O/YcwGltpeV3FDfLb55pfugZIzHu42818k=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=//blog.peterpei.xyz/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=//blog.peterpei.xyz/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=//blog.peterpei.xyz/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=//blog.peterpei.xyz/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=//blog.peterpei.xyz/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="深澜折腾指北"><meta property="og:description" content="深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图
+原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s'>
+<title>深澜折腾指北</title>
+
+<link rel='canonical' href='/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/'>
+
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='深澜折腾指北'>
+<meta property='og:description' content='深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图
 Part1:摆脱官方登陆器 学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。
 第一种方法:沙盒(SandBox) 例如在使用SandBoxie时可以绕过系统的检测，
 愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。
 除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。
 第二种方法:第三方客户端 在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。
-安利一个我自己写的客户端: Srun boxies ，用pyqt5+html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。
+安利一个我自己写的客户端: Srun boxies ，用pyqt5&#43;html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。
 Part2:自己写个客户端 请不要害怕，客户端是可以自己写的。
 第一步:我的校园网是什么上网方式? 简单介绍两种上网方法:PPPOE和Portal认证
 PPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。
@@ -74,7 +82,7 @@ drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不
 返回值为login_ok 即表示登陆成功
 第三步:复现
 打开cmd，用curl命令发送请求包，
-curl -d &#34;action=login&username=%7BSRUN3%7D%0D%0A645%3B67454657&password=7ccAAcc99cc9&drop=0&pop=1&type=2&n=117&mbytes=0&minutes=0&ac_id=1&mac=00%3a2b%3a67%3a5b%3a56%3a2e&#34; http://172.16.154.130/cgi-bin/srun_portal 发送请求
+curl -d &amp;#34;action=login&amp;amp;username=%7BSRUN3%7D%0D%0A645%3B67454657&amp;amp;password=7ccAAcc99cc9&amp;amp;drop=0&amp;amp;pop=1&amp;amp;type=2&amp;amp;n=117&amp;amp;mbytes=0&amp;amp;minutes=0&amp;amp;ac_id=1&amp;amp;mac=00%3a2b%3a67%3a5b%3a56%3a2e&amp;#34; http://172.16.154.130/cgi-bin/srun_portal 发送请求
 得到
 我这个路由器正在登陆，so……当然如果登陆成功应该是login_ok
 这个时候，你就可以用各种各样的语言写各种各样的客户端了!
@@ -83,15 +91,20 @@ curl -d &#34;action=login&username=%7BSRUN3%7D%0D%0A645%3B67454657&password=7ccA
 此时的n也是不同的233 这个应该是用户名加密
 当然，你还需要一点运气23333 Part3:白嫖使我快乐
 在了解了登陆模式之后，我们还知道默认的校园网密码为”123456″
-账号为学号(年级+院系+班级号)
+账号为学号(年级&#43;院系&#43;班级号)
 所以我们大可以跑全校校园网密码 一点微小的贡献
-原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s"><meta property="og:type" content="article"><meta property="og:url" content="//blog.peterpei.xyz/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/"><meta property="og:image" content="https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-10-09T09:01:52+08:00"><meta property="article:modified_time" content="2021-10-09T09:01:52+08:00"><meta property="og:site_name" content="Peterpei 的航行日志"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://github-readme-stats.vercel.app/api?username=P-PPPP&show_icons=true&theme=tokyonight&hide_title=true&layout=compact.svg"><meta name=twitter:title content="深澜折腾指北"><meta name=twitter:description content="深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图
+原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s'>
+<meta property='og:url' content='/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/'>
+<meta property='og:site_name' content='P_P Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2021-10-09T09:01:52&#43;08:00'/><meta property='article:modified_time' content='2021-10-09T09:01:52&#43;08:00'/>
+<meta name="twitter:title" content="深澜折腾指北">
+<meta name="twitter:description" content="深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图
 Part1:摆脱官方登陆器 学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。
 第一种方法:沙盒(SandBox) 例如在使用SandBoxie时可以绕过系统的检测，
 愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。
 除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。
 第二种方法:第三方客户端 在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。
-安利一个我自己写的客户端: Srun boxies ，用pyqt5+html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。
+安利一个我自己写的客户端: Srun boxies ，用pyqt5&#43;html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。
 Part2:自己写个客户端 请不要害怕，客户端是可以自己写的。
 第一步:我的校园网是什么上网方式? 简单介绍两种上网方法:PPPOE和Portal认证
 PPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。
@@ -117,7 +130,7 @@ drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不
 返回值为login_ok 即表示登陆成功
 第三步:复现
 打开cmd，用curl命令发送请求包，
-curl -d &#34;action=login&username=%7BSRUN3%7D%0D%0A645%3B67454657&password=7ccAAcc99cc9&drop=0&pop=1&type=2&n=117&mbytes=0&minutes=0&ac_id=1&mac=00%3a2b%3a67%3a5b%3a56%3a2e&#34; http://172.16.154.130/cgi-bin/srun_portal 发送请求
+curl -d &amp;#34;action=login&amp;amp;username=%7BSRUN3%7D%0D%0A645%3B67454657&amp;amp;password=7ccAAcc99cc9&amp;amp;drop=0&amp;amp;pop=1&amp;amp;type=2&amp;amp;n=117&amp;amp;mbytes=0&amp;amp;minutes=0&amp;amp;ac_id=1&amp;amp;mac=00%3a2b%3a67%3a5b%3a56%3a2e&amp;#34; http://172.16.154.130/cgi-bin/srun_portal 发送请求
 得到
 我这个路由器正在登陆，so……当然如果登陆成功应该是login_ok
 这个时候，你就可以用各种各样的语言写各种各样的客户端了!
@@ -126,25 +139,453 @@ curl -d &#34;action=login&username=%7BSRUN3%7D%0D%0A645%3B67454657&password=7ccA
 此时的n也是不同的233 这个应该是用户名加密
 当然，你还需要一点运气23333 Part3:白嫖使我快乐
 在了解了登陆模式之后，我们还知道默认的校园网密码为”123456″
-账号为学号(年级+院系+班级号)
+账号为学号(年级&#43;院系&#43;班级号)
 所以我们大可以跑全校校园网密码 一点微小的贡献
-原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"//blog.peterpei.xyz/post/"},{"@type":"ListItem","position":2,"name":"深澜折腾指北","item":"//blog.peterpei.xyz/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"深澜折腾指北","name":"深澜折腾指北","description":"深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图\nPart1:摆脱官方登陆器 学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。\n第一种方法:沙盒(SandBox) 例如在使用SandBoxie时可以绕过系统的检测，\n愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。\n除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。\n第二种方法:第三方客户端 在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。\n安利一个我自己写的客户端: Srun boxies ，用pyqt5+html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。\nPart2:自己写个客户端 请不要害怕，客户端是可以自己写的。\n第一步:我的校园网是什么上网方式? 简单介绍两种上网方法:PPPOE和Portal认证\nPPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。\nPortal:其实是DHCP的一个变种，即设备在连接网络时，交换机(路由)会分配一个IP地址，但是此时还不能联网，你需要web认证，这种好处是全平台通用。并且适合抓包\n第一点五步:没有漏洞可言 事实上:绕过校园网有很多方法，例如udp53端口，可惜我校直接封掉53，况且用tcp转发udp端口也许会造成堵塞，体验并不好\n第二步:抓你就完事了 抓包，是的，最简单的方法。\n抓包方法很多，这里分别介绍手机和电脑的两种方法\n手机:\n抓包软件选择了HttpCanary,酷友的一个作品。打开之后限制抓包软件为登陆器 如图所示\n之后开始抓包(模拟正常登陆)，软件会列出所有数据传输\n每个包都查看请求和响应，终于我们找到了我们想要的\n稍微分析一下:action=login代表登陆操作\nusername和password都是加密过的，GitHub上面提供了用户名和密码的加密方式(连接)\ndrop和pop未知，n,type和acid都是静态的，无需修改，但是对于不同学校可能有所不同，IP是本机客户端ip,而mac地址默认为0\n请求地址为http://172.16.154.130，头有定制ua(但其实并没有检测ua)方法是POST。\n此时我们大致了解了登陆方式:发送登录请求给交换机(路由)即可上网\n电脑:\n电脑使用了wireshark，也是老牌抓包软件了\n同样的模拟登录\n结合destination和info可以很轻松看出来最后的HTTP包应该是登陆有关的\n追踪此TCP流发现是向http://172.16.154.130:69/传输的数据\n发现登陆请求和手机端相似，但是记录了mac，并且取消了IP认证\n返回值为login_ok 即表示登陆成功\n第三步:复现\n打开cmd，用curl命令发送请求包，\ncurl -d \u0026#34;action=login\u0026amp;username=%7BSRUN3%7D%0D%0A645%3B67454657\u0026amp;password=7ccAAcc99cc9\u0026amp;drop=0\u0026amp;pop=1\u0026amp;type=2\u0026amp;n=117\u0026amp;mbytes=0\u0026amp;minutes=0\u0026amp;ac_id=1\u0026amp;mac=00%3a2b%3a67%3a5b%3a56%3a2e\u0026#34; http://172.16.154.130/cgi-bin/srun_portal 发送请求\n得到\n我这个路由器正在登陆，so……当然如果登陆成功应该是login_ok\n这个时候，你就可以用各种各样的语言写各种各样的客户端了!\n附加步:分析加密方式\n加密方式很难猜，但是我们可以用js分析,例如\n此时的n也是不同的233 这个应该是用户名加密\n当然，你还需要一点运气23333 Part3:白嫖使我快乐\n在了解了登陆模式之后，我们还知道默认的校园网密码为”123456″\n账号为学号(年级+院系+班级号)\n所以我们大可以跑全校校园网密码 一点微小的贡献\n原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s","keywords":[],"articleBody":"深澜校园网折腾指南 未经允许的获利和违规，本人一概不负责任😇😇😇😇😇 ** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil ** 我校校园网登陆器截图\nPart1:摆脱官方登陆器 学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。\n第一种方法:沙盒(SandBox) 例如在使用SandBoxie时可以绕过系统的检测，\n愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。\n除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。\n第二种方法:第三方客户端 在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。\n安利一个我自己写的客户端: Srun boxies ，用pyqt5+html写的，ui还不错，至少目前我还在维护 对于第三方客户端，没有热点共享限制，enjoy。\nPart2:自己写个客户端 请不要害怕，客户端是可以自己写的。\n第一步:我的校园网是什么上网方式? 简单介绍两种上网方法:PPPOE和Portal认证\nPPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。\nPortal:其实是DHCP的一个变种，即设备在连接网络时，交换机(路由)会分配一个IP地址，但是此时还不能联网，你需要web认证，这种好处是全平台通用。并且适合抓包\n第一点五步:没有漏洞可言 事实上:绕过校园网有很多方法，例如udp53端口，可惜我校直接封掉53，况且用tcp转发udp端口也许会造成堵塞，体验并不好\n第二步:抓你就完事了 抓包，是的，最简单的方法。\n抓包方法很多，这里分别介绍手机和电脑的两种方法\n手机:\n抓包软件选择了HttpCanary,酷友的一个作品。打开之后限制抓包软件为登陆器 如图所示\n之后开始抓包(模拟正常登陆)，软件会列出所有数据传输\n每个包都查看请求和响应，终于我们找到了我们想要的\n稍微分析一下:action=login代表登陆操作\nusername和password都是加密过的，GitHub上面提供了用户名和密码的加密方式(连接)\ndrop和pop未知，n,type和acid都是静态的，无需修改，但是对于不同学校可能有所不同，IP是本机客户端ip,而mac地址默认为0\n请求地址为http://172.16.154.130，头有定制ua(但其实并没有检测ua)方法是POST。\n此时我们大致了解了登陆方式:发送登录请求给交换机(路由)即可上网\n电脑:\n电脑使用了wireshark，也是老牌抓包软件了\n同样的模拟登录\n结合destination和info可以很轻松看出来最后的HTTP包应该是登陆有关的\n追踪此TCP流发现是向http://172.16.154.130:69/传输的数据\n发现登陆请求和手机端相似，但是记录了mac，并且取消了IP认证\n返回值为login_ok 即表示登陆成功\n第三步:复现\n打开cmd，用curl命令发送请求包，\ncurl -d \"action=login\u0026username=%7BSRUN3%7D%0D%0A645%3B67454657\u0026password=7ccAAcc99cc9\u0026drop=0\u0026pop=1\u0026type=2\u0026n=117\u0026mbytes=0\u0026minutes=0\u0026ac_id=1\u0026mac=00%3a2b%3a67%3a5b%3a56%3a2e\" http://172.16.154.130/cgi-bin/srun_portal 发送请求\n得到\n我这个路由器正在登陆，so……当然如果登陆成功应该是login_ok\n这个时候，你就可以用各种各样的语言写各种各样的客户端了!\n附加步:分析加密方式\n加密方式很难猜，但是我们可以用js分析,例如\n此时的n也是不同的233 这个应该是用户名加密\n当然，你还需要一点运气23333 Part3:白嫖使我快乐\n在了解了登陆模式之后，我们还知道默认的校园网密码为”123456″\n账号为学号(年级+院系+班级号)\n所以我们大可以跑全校校园网密码 一点微小的贡献\n原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s\n我校网速限制为丧心病狂的2.5mb/s，在这种情况下，大约三台设备同时连接，整个网(或者说账号)就崩掉了。下载个游戏有时候就要一天。加载缓慢就是经常的事.于是，多拨！\n如果你是pppoe模式，恭喜你，随便一搜就有大把教程。我不赘述\n但如果你是portal模式，可以看一眼我的教程，也许会对你有所启发\n现在，我们有了全校账号，和验证模式\n现在我们需要一个路由。我们用的是newwifi3(mt7621芯片，刷啥都可以)刷上了openwrt\n也就是说，我们要让路由器模拟我们的登陆操作，并且要多条线路模拟，模拟之后，我们需要多合一\n第一步:lan变wan\n路由器后面一般只有一个wan口，我们需要把lan口变成wan口，利用的是vlan\n在openwrt的网络 -\u003e 交换机里面可以进行如下设置\n第一行:是默认的wan口\n第二行到第四行是三个lan变wan\ncpu处全选tagged，你需要开启的lan口选择untagged,其余关掉，此时你应该获得了三个接口(第一个为cpu),即lan1 lan2 和 lan3\n第二步:独立IP搞快点\nopenwrt选项来到网络 -\u003e 接口\n名称建议改为 wan+数字 便于管理，协议选择DHCP(如果你是PPPOE就选PPPOE)，接口选一个vlan的端口(这里我算是弄好了)\n之后来到设置\n主机名我也改了，主要是怕默认的openwrt会被交换机检测\n高级设置里面的mac用mac随机器修改一个，网关跃点随便填，但是不能重复\n防火墙这里分配同一个区域，然后点击保存\u0026应用\n我这里是三拨，如图每个口都有了IP地址\n此时，我们已经模拟出来了三个“客户端”\n网卡分别为0.2 0.3 和 0.4\n第三步:每个IP都拨号\n如果你没有curl,你得先安装curl，或者换个固件\n我们现在需要分别用每个网卡向交换机post数据，模拟登录，打开ssh工具(这里用的是finalshell)\n输入上方复现的数据\ncurl –interface eth0.3 -d “action=login\u0026username=%7BSRUN3%7D%0D%0A645%3B6%3A46475%3C\u0026password=7ccAAcc99cc9\u0026drop=0\u0026pop=1\u0026type=2\u0026n=117\u0026mbytes=0\u0026minutes=0\u0026ac_id=1\u0026mac=00%3a2b%3a67%3a5b%3a56%3a2e” http://172.16.154.130/cgi-bin/srun_portal\n其中 –interface eth0.3 代表使用0.3网卡发送数据，复现0.2和0.4的操作 IP已经在线了 login_ok\n当都拨号完成之后，我们可以通过如下命令查看网卡是否已经连接互联网\ncurl –interface eth0.4 http://detectportal.firefox.com/success.txt\nsuccess即为成功\n拨号完成\n第四步:整合!多线合一\n首先得安装mwan3相关的包 前两个是ui和中文包，第三个是核心\nopenwrt来到 网络 -\u003e 负载均衡\n新建三个接口，名称必须与网络-\u003e接口一样\n如果没错的话，接口的跳跃点会显示出来，点击启用，输入一个能ping通的ip(例如百度)\n之后选择“成员”，把三个接口都放上，命名如下，权重和跃点都默认1\n之后的“策略”如图\n最后来到“规则”\n我这里就直接用了默认规则，如果你有特殊要求，可以指定。\n第五步:检测\n来到 状态 -\u003e 进程\n搜索mwan，看到三个ping进程\n即为多拨成功。此时你的网速大概率可以叠加了。 Part4:后记\n2020年，网络已经成为了基础设施之一，作为一个重度网络用户，对于学校的垄断和网速阉割实在是无法接受。互联网的核心在于分享，本文可以任意转载，只需在表明原作者即可。\npeace.\n","wordCount":"156","inLanguage":"en","datePublished":"2021-10-09T09:01:52+08:00","dateModified":"2021-10-09T09:01:52+08:00","author":{"@type":"Person","name":"PP"},"mainEntityOfPage":{"@type":"WebPage","@id":"//blog.peterpei.xyz/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/"},"publisher":{"@type":"Organization","name":"P_P Blog","logo":{"@type":"ImageObject","url":"//blog.peterpei.xyz/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=//blog.peterpei.xyz/ accesskey=h title="PP_blog (Alt + H)">PP_blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=//blog.peterpei.xyz/about/ title=About><span>About</span></a></li><li><a href=//blog.peterpei.xyz/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=//blog.peterpei.xyz/hobby/ title=😍><span>😍</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=//blog.peterpei.xyz/>Home</a>&nbsp;»&nbsp;<a href=//blog.peterpei.xyz/post/>Posts</a></div><h1 class=post-title>深澜折腾指北</h1><div class=post-meta><span title='2021-10-09 09:01:52 +0800 CST'>October 9, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;PP&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/post/%e6%b7%b1%e6%be%9c%e6%8a%98%e8%85%be%e6%8c%87%e5%8c%97.md rel="noopener noreferrer" target=_blank>edit</a></div></header><div class=post-content><h1 id=深澜校园网折腾指南>深澜校园网折腾指南<a hidden class=anchor aria-hidden=true href=#深澜校园网折腾指南>#</a></h1><h4 id=未经允许的获利和违规本人一概不负责任>未经允许的获利和违规，本人一概不负责任😇😇😇😇😇<a hidden class=anchor aria-hidden=true href=#未经允许的获利和违规本人一概不负责任>#</a></h4><p>** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil **
-我校校园网登陆器截图</p><h2 id=part1摆脱官方登陆器>Part1:摆脱官方登陆器<a hidden class=anchor aria-hidden=true href=#part1摆脱官方登陆器>#</a></h2><p>学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。</p><h4 id=第一种方法沙盒sandbox>第一种方法:沙盒(SandBox)<a hidden class=anchor aria-hidden=true href=#第一种方法沙盒sandbox>#</a></h4><p>例如在使用SandBoxie时可以绕过系统的检测，</p><p>愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。</p><p>除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。</p><h4 id=第二种方法第三方客户端>第二种方法:第三方客户端<a hidden class=anchor aria-hidden=true href=#第二种方法第三方客户端>#</a></h4><p>在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。</p><p>安利一个我自己写的客户端: <a href=https://github.com/peterpei1186861238/Srun3k-Boxies>Srun boxies</a> ，用pyqt5+html写的，ui还不错，至少目前我还在维护
-<img loading=lazy src=https://i.loli.net/2021/10/09/bTA4HBC58do6VRe.png alt=图片.png></p><p>对于第三方客户端，没有热点共享限制，enjoy。</p><h3 id=part2自己写个客户端>Part2:自己写个客户端<a hidden class=anchor aria-hidden=true href=#part2自己写个客户端>#</a></h3><p>请不要害怕，客户端是可以自己写的。</p><h4 id=第一步我的校园网是什么上网方式>第一步:我的校园网是什么上网方式?<a hidden class=anchor aria-hidden=true href=#第一步我的校园网是什么上网方式>#</a></h4><p>简单介绍两种上网方法:PPPOE和Portal认证</p><p>PPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。</p><p>Portal:其实是DHCP的一个变种，即设备在连接网络时，交换机(路由)会分配一个IP地址，但是此时还不能联网，你需要web认证，这种好处是全平台通用。并且适合抓包</p><h4 id=第一点五步没有漏洞可言>第一点五步:没有漏洞可言<a hidden class=anchor aria-hidden=true href=#第一点五步没有漏洞可言>#</a></h4><p>事实上:绕过校园网有很多方法，例如udp53端口，可惜我校直接封掉53，况且用tcp转发udp端口也许会造成堵塞，体验并不好</p><h4 id=第二步抓你就完事了>第二步:抓你就完事了<a hidden class=anchor aria-hidden=true href=#第二步抓你就完事了>#</a></h4><p>抓包，是的，最简单的方法。</p><p>抓包方法很多，这里分别介绍手机和电脑的两种方法</p><p>手机:</p><p>抓包软件选择了HttpCanary,酷友的一个作品。打开之后限制抓包软件为登陆器
-如图所示</p><p>之后开始抓包(模拟正常登陆)，软件会列出所有数据传输</p><p>每个包都查看请求和响应，终于我们找到了我们想要的</p><p>稍微分析一下:action=login代表登陆操作</p><p>username和password都是加密过的，GitHub上面提供了用户名和密码的加密方式(连接)</p><p>drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不同学校可能有所不同，IP是本机客户端ip,而mac地址默认为0</p><p>请求地址为http://172.16.154.130，头有定制ua(但其实并没有检测ua)方法是POST。</p><p>此时我们大致了解了登陆方式:发送登录请求给交换机(路由)即可上网</p><p>电脑:</p><p>电脑使用了wireshark，也是老牌抓包软件了</p><p>同样的模拟登录</p><p>结合destination和info可以很轻松看出来最后的HTTP包应该是登陆有关的</p><p>追踪此TCP流发现是向http://172.16.154.130:69/传输的数据</p><p>发现登陆请求和手机端相似，但是记录了mac，并且取消了IP认证</p><p>返回值为login_ok 即表示登陆成功</p><p>第三步:复现</p><p>打开cmd，用curl命令发送请求包，</p><pre tabindex=0><code>
+原理很简单，我就不po出来了 另类打码 Part4:向更高网速出发 48/8 = 6 mb/s">
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky compact">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="https://avatars.githubusercontent.com/u/32994395" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🐱‍🏍</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">P_P Blog</a></h1>
+            <h2 class="site-description">🐱‍🐉🐱‍💻</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/">深澜折腾指北</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 09, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="深澜校园网折腾指南">深澜校园网折腾指南</h1>
+<h4 id="未经允许的获利和违规本人一概不负责任">未经允许的获利和违规，本人一概不负责任😇😇😇😇😇</h4>
+<p>** 本文章只限于学习交流使用,版权所有:peterpei@coolapk, P_P_P_P_P@bilibil **
+我校校园网登陆器截图</p>
+<h2 id="part1摆脱官方登陆器">Part1:摆脱官方登陆器</h2>
+<p>学校的网络在线机制近乎于残酷:每一个账号只支持最多一台设备在线。并且Windows的官方登陆器会限制Windows开启热点，当然，想要绕过限制也是可行的。<!-- raw HTML omitted --></p>
+<h4 id="第一种方法沙盒sandbox">第一种方法:沙盒(SandBox)</h4>
+<p>例如在使用SandBoxie时可以绕过系统的检测，<!-- raw HTML omitted --></p>
+<p>愉快的开启热点。但是Windows自带热点共享只支持最多八台设备同时在线。同时你的电脑必须打开。<!-- raw HTML omitted --></p>
+<p>除此之外有时候也会发生DNS解析失败导致的网速变慢，部分图片无法加载的情况。同时，在沙盒环境下运行的校园网拨号客户端可能会出现奇奇怪怪的bug，例如经常掉线或者无法连接。傻瓜式的使用算是最大的优点了。。。<!-- raw HTML omitted --></p>
+<h4 id="第二种方法第三方客户端">第二种方法:第三方客户端</h4>
+<p>在Github上搜索”深澜”或者是”Srun”，会出现超级多的第三方客户端，这些客户端不一定都是可用的，并且有些项目已经过了很久，并不适用了。<!-- raw HTML omitted --></p>
+<p>安利一个我自己写的客户端: <a class="link" href="https://github.com/peterpei1186861238/Srun3k-Boxies"  target="_blank" rel="noopener"
+    >Srun boxies</a> ，用pyqt5+html写的，ui还不错，至少目前我还在维护<!-- raw HTML omitted -->
+<img src="https://i.loli.net/2021/10/09/bTA4HBC58do6VRe.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="图片.png"
+	
+	
+></p>
+<p>对于第三方客户端，没有热点共享限制，enjoy。</p>
+<h3 id="part2自己写个客户端">Part2:自己写个客户端</h3>
+<p>请不要害怕，客户端是可以自己写的。<!-- raw HTML omitted --></p>
+<h4 id="第一步我的校园网是什么上网方式">第一步:我的校园网是什么上网方式?</h4>
+<p>简单介绍两种上网方法:PPPOE和Portal认证<!-- raw HTML omitted --></p>
+<p>PPPOE:也就是俗称的”拨号”，对于这种方案，只需要搞清楚pppoe的账号密码即可，抓包或者Windows日志都可以查看。<!-- raw HTML omitted --></p>
+<p>Portal:其实是DHCP的一个变种，即设备在连接网络时，交换机(路由)会分配一个IP地址，但是此时还不能联网，你需要web认证，这种好处是全平台通用。并且适合抓包<!-- raw HTML omitted --></p>
+<h4 id="第一点五步没有漏洞可言">第一点五步:没有漏洞可言</h4>
+<p>事实上:绕过校园网有很多方法，例如udp53端口，可惜我校直接封掉53，况且用tcp转发udp端口也许会造成堵塞，体验并不好<!-- raw HTML omitted --></p>
+<h4 id="第二步抓你就完事了">第二步:抓你就完事了</h4>
+<p>抓包，是的，最简单的方法。<!-- raw HTML omitted --></p>
+<p>抓包方法很多，这里分别介绍手机和电脑的两种方法<!-- raw HTML omitted --></p>
+<p>手机:</p>
+<p>抓包软件选择了HttpCanary,酷友的一个作品。打开之后限制抓包软件为登陆器
+如图所示</p>
+<p>之后开始抓包(模拟正常登陆)，软件会列出所有数据传输</p>
+<p>每个包都查看请求和响应，终于我们找到了我们想要的</p>
+<p>稍微分析一下:action=login代表登陆操作</p>
+<p>username和password都是加密过的，GitHub上面提供了用户名和密码的加密方式(连接)</p>
+<p>drop和pop未知，n,type和acid都是静态的，无需修改，但是对于不同学校可能有所不同，IP是本机客户端ip,而mac地址默认为0</p>
+<p>请求地址为http://172.16.154.130，头有定制ua(但其实并没有检测ua)方法是POST。</p>
+<p>此时我们大致了解了登陆方式:发送登录请求给交换机(路由)即可上网</p>
+<p>电脑:</p>
+<p>电脑使用了wireshark，也是老牌抓包软件了</p>
+<p>同样的模拟登录</p>
+<p>结合destination和info可以很轻松看出来最后的HTTP包应该是登陆有关的</p>
+<p>追踪此TCP流发现是向http://172.16.154.130:69/传输的数据</p>
+<p>发现登陆请求和手机端相似，但是记录了mac，并且取消了IP认证</p>
+<p>返回值为login_ok 即表示登陆成功</p>
+<p>第三步:复现</p>
+<p>打开cmd，用curl命令发送请求包，</p>
+<pre tabindex="0"><code>
 curl -d &#34;action=login&amp;username=%7BSRUN3%7D%0D%0A645%3B67454657&amp;password=7ccAAcc99cc9&amp;drop=0&amp;pop=1&amp;type=2&amp;n=117&amp;mbytes=0&amp;minutes=0&amp;ac_id=1&amp;mac=00%3a2b%3a67%3a5b%3a56%3a2e&#34; http://172.16.154.130/cgi-bin/srun_portal
-</code></pre><p>发送请求</p><p>得到</p><p>我这个路由器正在登陆，so……当然如果登陆成功应该是login_ok</p><p>这个时候，你就可以用各种各样的语言写各种各样的客户端了!</p><p>附加步:分析加密方式</p><p>加密方式很难猜，但是我们可以用js分析,例如</p><p>此时的n也是不同的233
-这个应该是用户名加密</p><p>当然，你还需要一点运气23333
-Part3:白嫖使我快乐</p><p>在了解了登陆模式之后，我们还知道默认的校园网密码为”123456″</p><p>账号为学号(年级+院系+班级号)</p><p>所以我们大可以跑全校校园网密码
-一点微小的贡献</p><p>原理很简单，我就不po出来了
+</code></pre><p>发送请求</p>
+<p>得到</p>
+<p>我这个路由器正在登陆，so……当然如果登陆成功应该是login_ok</p>
+<p>这个时候，你就可以用各种各样的语言写各种各样的客户端了!</p>
+<p>附加步:分析加密方式</p>
+<p>加密方式很难猜，但是我们可以用js分析,例如</p>
+<p>此时的n也是不同的233
+这个应该是用户名加密</p>
+<p>当然，你还需要一点运气23333
+Part3:白嫖使我快乐</p>
+<p>在了解了登陆模式之后，我们还知道默认的校园网密码为”123456″</p>
+<p>账号为学号(年级+院系+班级号)</p>
+<p>所以我们大可以跑全校校园网密码
+一点微小的贡献</p>
+<p>原理很简单，我就不po出来了
 另类打码
 Part4:向更高网速出发
-48/8 = 6 mb/s</p><p>我校网速限制为丧心病狂的2.5mb/s，在这种情况下，大约三台设备同时连接，整个网(或者说账号)就崩掉了。下载个游戏有时候就要一天。加载缓慢就是经常的事.于是，多拨！</p><p>如果你是pppoe模式，恭喜你，随便一搜就有大把教程。我不赘述</p><p>但如果你是portal模式，可以看一眼我的教程，也许会对你有所启发</p><p>现在，我们有了全校账号，和验证模式</p><p>现在我们需要一个路由。我们用的是newwifi3(mt7621芯片，刷啥都可以)刷上了openwrt</p><p>也就是说，我们要让路由器模拟我们的登陆操作，并且要多条线路模拟，模拟之后，我们需要多合一</p><p>第一步:lan变wan</p><p>路由器后面一般只有一个wan口，我们需要把lan口变成wan口，利用的是vlan</p><p>在openwrt的网络 -> 交换机里面可以进行如下设置</p><p>第一行:是默认的wan口</p><p>第二行到第四行是三个lan变wan</p><p>cpu处全选tagged，你需要开启的lan口选择untagged,其余关掉，此时你应该获得了三个接口(第一个为cpu),即lan1 lan2 和 lan3</p><p>第二步:独立IP搞快点</p><p>openwrt选项来到网络 -> 接口</p><p>名称建议改为 wan+数字 便于管理，协议选择DHCP(如果你是PPPOE就选PPPOE)，接口选一个vlan的端口(这里我算是弄好了)</p><p>之后来到设置</p><p>主机名我也改了，主要是怕默认的openwrt会被交换机检测</p><p>高级设置里面的mac用mac随机器修改一个，网关跃点随便填，但是不能重复</p><p>防火墙这里分配同一个区域，然后点击保存&应用</p><p>我这里是三拨，如图每个口都有了IP地址</p><p>此时，我们已经模拟出来了三个“客户端”</p><p>网卡分别为0.2 0.3 和 0.4</p><p>第三步:每个IP都拨号</p><p>如果你没有curl,你得先安装curl，或者换个固件</p><p>我们现在需要分别用每个网卡向交换机post数据，模拟登录，打开ssh工具(这里用的是finalshell)</p><p>输入上方复现的数据</p><p>curl &ndash;interface eth0.3 -d &ldquo;action=login&username=%7BSRUN3%7D%0D%0A645%3B6%3A46475%3C&password=7ccAAcc99cc9&drop=0&pop=1&type=2&n=117&mbytes=0&minutes=0&ac_id=1&mac=00%3a2b%3a67%3a5b%3a56%3a2e&rdquo; http://172.16.154.130/cgi-bin/srun_portal</p><p>其中 &ndash;interface eth0.3 代表使用0.3网卡发送数据，复现0.2和0.4的操作
+48/8 = 6 mb/s</p>
+<p>我校网速限制为丧心病狂的2.5mb/s，在这种情况下，大约三台设备同时连接，整个网(或者说账号)就崩掉了。下载个游戏有时候就要一天。加载缓慢就是经常的事.于是，多拨！</p>
+<p>如果你是pppoe模式，恭喜你，随便一搜就有大把教程。我不赘述</p>
+<p>但如果你是portal模式，可以看一眼我的教程，也许会对你有所启发</p>
+<p>现在，我们有了全校账号，和验证模式</p>
+<p>现在我们需要一个路由。我们用的是newwifi3(mt7621芯片，刷啥都可以)刷上了openwrt</p>
+<p>也就是说，我们要让路由器模拟我们的登陆操作，并且要多条线路模拟，模拟之后，我们需要多合一</p>
+<p>第一步:lan变wan</p>
+<p>路由器后面一般只有一个wan口，我们需要把lan口变成wan口，利用的是vlan</p>
+<p>在openwrt的网络 -&gt; 交换机里面可以进行如下设置</p>
+<p>第一行:是默认的wan口</p>
+<p>第二行到第四行是三个lan变wan</p>
+<p>cpu处全选tagged，你需要开启的lan口选择untagged,其余关掉，此时你应该获得了三个接口(第一个为cpu),即lan1 lan2 和 lan3</p>
+<p>第二步:独立IP搞快点</p>
+<p>openwrt选项来到网络 -&gt; 接口</p>
+<p>名称建议改为 wan+数字 便于管理，协议选择DHCP(如果你是PPPOE就选PPPOE)，接口选一个vlan的端口(这里我算是弄好了)</p>
+<p>之后来到设置</p>
+<p>主机名我也改了，主要是怕默认的openwrt会被交换机检测</p>
+<p>高级设置里面的mac用mac随机器修改一个，网关跃点随便填，但是不能重复</p>
+<p>防火墙这里分配同一个区域，然后点击保存&amp;应用</p>
+<p>我这里是三拨，如图每个口都有了IP地址</p>
+<p>此时，我们已经模拟出来了三个“客户端”</p>
+<p>网卡分别为0.2 0.3 和 0.4</p>
+<p>第三步:每个IP都拨号</p>
+<p>如果你没有curl,你得先安装curl，或者换个固件</p>
+<p>我们现在需要分别用每个网卡向交换机post数据，模拟登录，打开ssh工具(这里用的是finalshell)</p>
+<p>输入上方复现的数据</p>
+<p>curl &ndash;interface eth0.3 -d &ldquo;action=login&amp;username=%7BSRUN3%7D%0D%0A645%3B6%3A46475%3C&amp;password=7ccAAcc99cc9&amp;drop=0&amp;pop=1&amp;type=2&amp;n=117&amp;mbytes=0&amp;minutes=0&amp;ac_id=1&amp;mac=00%3a2b%3a67%3a5b%3a56%3a2e&rdquo; http://172.16.154.130/cgi-bin/srun_portal</p>
+<p>其中 &ndash;interface eth0.3 代表使用0.3网卡发送数据，复现0.2和0.4的操作
 IP已经在线了
-login_ok</p><p>当都拨号完成之后，我们可以通过如下命令查看网卡是否已经连接互联网</p><p>curl &ndash;interface eth0.4 <a href=http://detectportal.firefox.com/success.txt>http://detectportal.firefox.com/success.txt</a></p><p>success即为成功</p><p>拨号完成</p><p>第四步:整合!多线合一</p><p>首先得安装mwan3相关的包
-前两个是ui和中文包，第三个是核心</p><p>openwrt来到 网络 -> 负载均衡</p><p>新建三个接口，名称必须与网络->接口一样</p><p>如果没错的话，接口的跳跃点会显示出来，点击启用，输入一个能ping通的ip(例如百度)</p><p>之后选择“成员”，把三个接口都放上，命名如下，权重和跃点都默认1</p><p>之后的“策略”如图</p><p>最后来到“规则”</p><p>我这里就直接用了默认规则，如果你有特殊要求，可以指定。</p><p>第五步:检测</p><p>来到 状态 -> 进程</p><p>搜索mwan，看到三个ping进程</p><p>即为多拨成功。此时你的网速大概率可以叠加了。
-Part4:后记</p><p>2020年，网络已经成为了基础设施之一，作为一个重度网络用户，对于学校的垄断和网速阉割实在是无法接受。互联网的核心在于分享，本文可以任意转载，只需在表明原作者即可。</p><p>peace.</p></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=//blog.peterpei.xyz/post/tarpeia/><span class=title>« Prev</span><br><span>Tarpeia|塔培亚</span></a>
-<a class=next href=//blog.peterpei.xyz/post/aria2%E9%85%8D%E7%BD%AE/><span class=title>Next »</span><br><span>Aria2配置</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2023 <a href=//blog.peterpei.xyz/>P_P Blog</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
+login_ok</p>
+<p>当都拨号完成之后，我们可以通过如下命令查看网卡是否已经连接互联网</p>
+<p>curl &ndash;interface eth0.4 <a class="link" href="http://detectportal.firefox.com/success.txt"  target="_blank" rel="noopener"
+    >http://detectportal.firefox.com/success.txt</a></p>
+<p>success即为成功</p>
+<p>拨号完成</p>
+<p>第四步:整合!多线合一</p>
+<p>首先得安装mwan3相关的包
+前两个是ui和中文包，第三个是核心</p>
+<p>openwrt来到 网络 -&gt; 负载均衡</p>
+<p>新建三个接口，名称必须与网络-&gt;接口一样</p>
+<p>如果没错的话，接口的跳跃点会显示出来，点击启用，输入一个能ping通的ip(例如百度)</p>
+<p>之后选择“成员”，把三个接口都放上，命名如下，权重和跃点都默认1</p>
+<p>之后的“策略”如图</p>
+<p>最后来到“规则”</p>
+<p>我这里就直接用了默认规则，如果你有特殊要求，可以指定。</p>
+<p>第五步:检测</p>
+<p>来到 状态 -&gt; 进程</p>
+<p>搜索mwan，看到三个ping进程</p>
+<p>即为多拨成功。此时你的网速大概率可以叠加了。
+Part4:后记</p>
+<p>2020年，网络已经成为了基础设施之一，作为一个重度网络用户，对于学校的垄断和网速阉割实在是无法接受。互联网的核心在于分享，本文可以任意转载，只需在表明原作者即可。</p>
+<p>peace.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 P_P Blog
+    </section>
+    
+    <section class="powerby">
+        
+            非常好博客 <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -2,84 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/post/dockertransfer.html</loc>
+    <loc>/post/dockertransfer/</loc>
     <lastmod>2022-10-15T09:30:04+08:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2022-10-15T09:30:04+08:00</lastmod>
   </url><url>
-    <loc>/post.html</loc>
+    <loc>/post/</loc>
     <lastmod>2022-10-15T09:30:04+08:00</lastmod>
   </url><url>
-    <loc>/post/python_thread_target.html</loc>
+    <loc>/post/python_thread_target/</loc>
     <lastmod>2022-09-19T22:40:24+08:00</lastmod>
   </url><url>
-    <loc>/post/changedomain.html</loc>
+    <loc>/post/changedomain/</loc>
     <lastmod>2022-06-30T15:57:42+08:00</lastmod>
   </url><url>
-    <loc>/post/byeie.html</loc>
+    <loc>/post/byeie/</loc>
     <lastmod>2022-06-16T18:01:29+08:00</lastmod>
   </url><url>
-    <loc>/post/apiceosredmap.html</loc>
-    <lastmod>2022-05-21T23:27:52+08:00</lastmod>
-  </url><url>
-    <loc>/post/bitcoin-isthatacoin.html</loc>
+    <loc>/post/bitcoin-isthatacoin/</loc>
     <lastmod>2022-05-04T22:27:46+08:00</lastmod>
   </url><url>
-    <loc>/post/gofaster.html</loc>
+    <loc>/post/gofaster/</loc>
     <lastmod>2022-04-16T22:59:32+08:00</lastmod>
   </url><url>
-    <loc>/post/fixnodeinopenwrt.html</loc>
+    <loc>/post/fixnodeinopenwrt/</loc>
     <lastmod>2022-04-16T22:50:14+08:00</lastmod>
   </url><url>
-    <loc>/post/nocountryforoldmen.html</loc>
+    <loc>/post/nocountryforoldmen/</loc>
     <lastmod>2022-04-15T21:35:20+08:00</lastmod>
   </url><url>
-    <loc>/post/chrome_in_firefox.html</loc>
+    <loc>/post/chrome_in_firefox/</loc>
     <lastmod>2022-03-12T21:41:42+08:00</lastmod>
   </url><url>
-    <loc>/post/winebcut.html</loc>
+    <loc>/post/winebcut/</loc>
     <lastmod>2021-12-26T22:03:15+08:00</lastmod>
   </url><url>
-    <loc>/post/rdp.html</loc>
+    <loc>/post/rdp/</loc>
     <lastmod>2021-12-09T09:28:42+08:00</lastmod>
   </url><url>
-    <loc>/post/nomonitor.html</loc>
+    <loc>/post/nomonitor/</loc>
     <lastmod>2021-12-09T09:23:45+08:00</lastmod>
   </url><url>
-    <loc>/post/hangover.html</loc>
+    <loc>/post/hangover/</loc>
     <lastmod>2021-10-21T17:45:33+08:00</lastmod>
   </url><url>
-    <loc>/post/getpip.html</loc>
+    <loc>/post/getpip/</loc>
     <lastmod>2021-10-19T15:23:47+08:00</lastmod>
   </url><url>
-    <loc>/post/tarpeia.html</loc>
+    <loc>/post/tarpeia/</loc>
     <lastmod>2021-10-15T11:30:44+08:00</lastmod>
   </url><url>
-    <loc>/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97.html</loc>
+    <loc>/post/%E6%B7%B1%E6%BE%9C%E6%8A%98%E8%85%BE%E6%8C%87%E5%8C%97/</loc>
     <lastmod>2021-10-09T09:01:52+08:00</lastmod>
   </url><url>
-    <loc>/post/aria2%E9%85%8D%E7%BD%AE.html</loc>
+    <loc>/post/aria2%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2021-10-09T08:59:41+08:00</lastmod>
   </url><url>
-    <loc>/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86.html</loc>
+    <loc>/post/aria2%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86/</loc>
     <lastmod>2021-10-09T08:56:39+08:00</lastmod>
   </url><url>
-    <loc>/post/rtl8821ce.html</loc>
+    <loc>/post/rtl8821ce/</loc>
     <lastmod>2021-10-09T08:49:39+08:00</lastmod>
   </url><url>
-    <loc>/post/2hugo.html</loc>
+    <loc>/post/2hugo/</loc>
     <lastmod>2021-10-08T17:29:27+08:00</lastmod>
   </url><url>
-    <loc>/about.html</loc>
+    <loc>/about/</loc>
     <lastmod>2021-10-08T17:27:54+08:00</lastmod>
   </url><url>
-    <loc>/hobby.html</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>/categories.html</loc>
+    <loc>/search/</loc>
   </url><url>
-    <loc>/search.html</loc>
-  </url><url>
-    <loc>/tags.html</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
