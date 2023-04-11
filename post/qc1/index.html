@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='初始计算化学，故把此当作学习日志，以便后人参考。
+1.何为计算化学，为何需要计算化学 计算化学的诞生离不开量子化学的发展，更离不了物理学的进步。
+“物理学的大厦已经落成，上面只有两朵乌云” 在1900年，开尔文(Lord Kelvin)引出了物理学界的两朵乌云,它们分别为：
+1.迈克尔孙—莫雷实验2.热辐射实验。
+这两个实验日后分别发展为了相对论和量子力学，人类彻底和牛顿告别，开启了现代物理学。
+其中的量子力学包含超弦理论等暂且不做讨论，量子力学的开辟影响了化学的发展。量子化学(Quantum chemistry)开始作为一门学科出现。
+我们初高中所学的原子、电子、夸克、能级跃迁、泡利原理等理论都源于量子化学，它允许我们以微观的视角了解化学元素的变化和反应机理。 科学家通过分析微观力场和变化来展示宏观的现象，例如焰火显色等。
+从未来检验 第一原理（英语：First principle），哲学与逻辑名词，是一个最基本的命题或假设，不能被省略或删除，也不能被违反。第一原理相当于是在数学中的公理。最早由亚里士多德提出。
+在物理学中，第一性原理，或称从头算，指从基本的物理学定律出发，不外加假设与经验拟合的推导与计算。例如利用薛定谔方程在一些近似方法下解电子结构，但不从实验数据得到拟合参数的从头计算法。
+量子听起来很好，但和宏观的实验相比，它太难实现了。暂且不说复杂的内部力场，光是无法直接表述力和内部关系，就够喝一壶了。
+除此之外，科学界是否愿意接纳这种纯理论推导也是一个问题。
+但从另一方面，仅凭理化实验带来的后验式实验本身需要多次校正。科学家开始通过第一性原理，借助基本的物理定律计算得到结果，并和预期实验拟合，逐渐地，实验、模拟和计算成为了物理学接受的方式。通过计算模拟的量子化学逐渐演变为一个新的学科&amp;ndash;计算化学(computational chemistry)。
+在基本物理定律的作用下，量子化学家通过计算不同物质的作用力，在生物、材料、分子模拟、生命、制药等方面找到了合适的分子、原子，造福人类。从这一角度来看，量子化学是化学的粘合剂。
+这部分科学家着眼于第一性原理,旨在通过物理方式探索世间存在的力和相关规律，这偏向于物理和数学，我只能望而却步，而且一般不能注重于数学规律（这表示着AI所带来的规律型模型可能不适用）。但这些科学家不断提出了类似于DFT等理论，让计算化学得以更好的发展。
+变成数学 然而微观力实在过于繁杂，以至于手算是不可能的。恰好计算机的革命帮助了量子化学的发展。出现了新的学科&amp;ndash;计算机化学。
+我在这里希望各位区分计算化学和计算机化学的区别。诚然两者联系十分紧密，然而计算化学包含了如何把化学物质数字化；计算机化学则重于通过计算机应用（人工智能、超级计算机等），达到数值计算的目的。
+计算化学的第一步，我认为，是如何把化学的结构变为数学。
+这里需要借助拓扑学，从拓扑学我们可以把立体的构型变为数组和矩阵，便于计算和分析。使计算机化学成为可能。
+这里介绍几种拓扑方式:
+1.邻接矩阵 2.距离矩阵 3.Hückel矩阵等'>
+<title>计算化学（一）：化学、物理与数学</title>
+
+<link rel='canonical' href='/post/qc1/'>
+
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='计算化学（一）：化学、物理与数学'>
+<meta property='og:description' content='初始计算化学，故把此当作学习日志，以便后人参考。
+1.何为计算化学，为何需要计算化学 计算化学的诞生离不开量子化学的发展，更离不了物理学的进步。
+“物理学的大厦已经落成，上面只有两朵乌云” 在1900年，开尔文(Lord Kelvin)引出了物理学界的两朵乌云,它们分别为：
+1.迈克尔孙—莫雷实验2.热辐射实验。
+这两个实验日后分别发展为了相对论和量子力学，人类彻底和牛顿告别，开启了现代物理学。
+其中的量子力学包含超弦理论等暂且不做讨论，量子力学的开辟影响了化学的发展。量子化学(Quantum chemistry)开始作为一门学科出现。
+我们初高中所学的原子、电子、夸克、能级跃迁、泡利原理等理论都源于量子化学，它允许我们以微观的视角了解化学元素的变化和反应机理。 科学家通过分析微观力场和变化来展示宏观的现象，例如焰火显色等。
+从未来检验 第一原理（英语：First principle），哲学与逻辑名词，是一个最基本的命题或假设，不能被省略或删除，也不能被违反。第一原理相当于是在数学中的公理。最早由亚里士多德提出。
+在物理学中，第一性原理，或称从头算，指从基本的物理学定律出发，不外加假设与经验拟合的推导与计算。例如利用薛定谔方程在一些近似方法下解电子结构，但不从实验数据得到拟合参数的从头计算法。
+量子听起来很好，但和宏观的实验相比，它太难实现了。暂且不说复杂的内部力场，光是无法直接表述力和内部关系，就够喝一壶了。
+除此之外，科学界是否愿意接纳这种纯理论推导也是一个问题。
+但从另一方面，仅凭理化实验带来的后验式实验本身需要多次校正。科学家开始通过第一性原理，借助基本的物理定律计算得到结果，并和预期实验拟合，逐渐地，实验、模拟和计算成为了物理学接受的方式。通过计算模拟的量子化学逐渐演变为一个新的学科&amp;ndash;计算化学(computational chemistry)。
+在基本物理定律的作用下，量子化学家通过计算不同物质的作用力，在生物、材料、分子模拟、生命、制药等方面找到了合适的分子、原子，造福人类。从这一角度来看，量子化学是化学的粘合剂。
+这部分科学家着眼于第一性原理,旨在通过物理方式探索世间存在的力和相关规律，这偏向于物理和数学，我只能望而却步，而且一般不能注重于数学规律（这表示着AI所带来的规律型模型可能不适用）。但这些科学家不断提出了类似于DFT等理论，让计算化学得以更好的发展。
+变成数学 然而微观力实在过于繁杂，以至于手算是不可能的。恰好计算机的革命帮助了量子化学的发展。出现了新的学科&amp;ndash;计算机化学。
+我在这里希望各位区分计算化学和计算机化学的区别。诚然两者联系十分紧密，然而计算化学包含了如何把化学物质数字化；计算机化学则重于通过计算机应用（人工智能、超级计算机等），达到数值计算的目的。
+计算化学的第一步，我认为，是如何把化学的结构变为数学。
+这里需要借助拓扑学，从拓扑学我们可以把立体的构型变为数组和矩阵，便于计算和分析。使计算机化学成为可能。
+这里介绍几种拓扑方式:
+1.邻接矩阵 2.距离矩阵 3.Hückel矩阵等'>
+<meta property='og:url' content='/post/qc1/'>
+<meta property='og:site_name' content='P_P Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2023-04-11T21:52:14&#43;08:00'/><meta property='article:modified_time' content='2023-04-11T21:52:14&#43;08:00'/>
+<meta name="twitter:title" content="计算化学（一）：化学、物理与数学">
+<meta name="twitter:description" content="初始计算化学，故把此当作学习日志，以便后人参考。
+1.何为计算化学，为何需要计算化学 计算化学的诞生离不开量子化学的发展，更离不了物理学的进步。
+“物理学的大厦已经落成，上面只有两朵乌云” 在1900年，开尔文(Lord Kelvin)引出了物理学界的两朵乌云,它们分别为：
+1.迈克尔孙—莫雷实验2.热辐射实验。
+这两个实验日后分别发展为了相对论和量子力学，人类彻底和牛顿告别，开启了现代物理学。
+其中的量子力学包含超弦理论等暂且不做讨论，量子力学的开辟影响了化学的发展。量子化学(Quantum chemistry)开始作为一门学科出现。
+我们初高中所学的原子、电子、夸克、能级跃迁、泡利原理等理论都源于量子化学，它允许我们以微观的视角了解化学元素的变化和反应机理。 科学家通过分析微观力场和变化来展示宏观的现象，例如焰火显色等。
+从未来检验 第一原理（英语：First principle），哲学与逻辑名词，是一个最基本的命题或假设，不能被省略或删除，也不能被违反。第一原理相当于是在数学中的公理。最早由亚里士多德提出。
+在物理学中，第一性原理，或称从头算，指从基本的物理学定律出发，不外加假设与经验拟合的推导与计算。例如利用薛定谔方程在一些近似方法下解电子结构，但不从实验数据得到拟合参数的从头计算法。
+量子听起来很好，但和宏观的实验相比，它太难实现了。暂且不说复杂的内部力场，光是无法直接表述力和内部关系，就够喝一壶了。
+除此之外，科学界是否愿意接纳这种纯理论推导也是一个问题。
+但从另一方面，仅凭理化实验带来的后验式实验本身需要多次校正。科学家开始通过第一性原理，借助基本的物理定律计算得到结果，并和预期实验拟合，逐渐地，实验、模拟和计算成为了物理学接受的方式。通过计算模拟的量子化学逐渐演变为一个新的学科&amp;ndash;计算化学(computational chemistry)。
+在基本物理定律的作用下，量子化学家通过计算不同物质的作用力，在生物、材料、分子模拟、生命、制药等方面找到了合适的分子、原子，造福人类。从这一角度来看，量子化学是化学的粘合剂。
+这部分科学家着眼于第一性原理,旨在通过物理方式探索世间存在的力和相关规律，这偏向于物理和数学，我只能望而却步，而且一般不能注重于数学规律（这表示着AI所带来的规律型模型可能不适用）。但这些科学家不断提出了类似于DFT等理论，让计算化学得以更好的发展。
+变成数学 然而微观力实在过于繁杂，以至于手算是不可能的。恰好计算机的革命帮助了量子化学的发展。出现了新的学科&amp;ndash;计算机化学。
+我在这里希望各位区分计算化学和计算机化学的区别。诚然两者联系十分紧密，然而计算化学包含了如何把化学物质数字化；计算机化学则重于通过计算机应用（人工智能、超级计算机等），达到数值计算的目的。
+计算化学的第一步，我认为，是如何把化学的结构变为数学。
+这里需要借助拓扑学，从拓扑学我们可以把立体的构型变为数组和矩阵，便于计算和分析。使计算机化学成为可能。
+这里介绍几种拓扑方式:
+1.邻接矩阵 2.距离矩阵 3.Hückel矩阵等">
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky compact">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="https://avatars.githubusercontent.com/u/32994395" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🐱‍🏍</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">P_P Blog</a></h1>
+            <h2 class="site-description">🐱‍🐉🐱‍💻</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/qc1/">计算化学（一）：化学、物理与数学</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 11, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>初始计算化学，故把此当作学习日志，以便后人参考。</p>
+<h2 id="1何为计算化学为何需要计算化学">1.何为计算化学，为何需要计算化学</h2>
+<p>计算化学的诞生离不开量子化学的发展，更离不了物理学的进步。</p>
+<h3 id="物理学的大厦已经落成上面只有两朵乌云">“物理学的大厦已经落成，上面只有两朵乌云”</h3>
+<p>在1900年，开尔文(Lord Kelvin)引出了物理学界的两朵乌云,它们分别为：<br>
+1.迈克尔孙—莫雷实验2.热辐射实验。<br>
+这两个实验日后分别发展为了相对论和<strong>量子力学</strong>，人类彻底和牛顿告别，开启了现代物理学。<br>
+其中的量子力学包含超弦理论等暂且不做讨论，量子力学的开辟影响了化学的发展。量子化学(Quantum chemistry)开始作为一门学科出现。<br>
+我们初高中所学的原子、电子、夸克、能级跃迁、泡利原理等理论都源于量子化学，它允许我们以微观的视角了解化学元素的变化和反应机理。
+科学家通过分析微观力场和变化来展示宏观的现象，例如焰火显色等。</p>
+<h3 id="从未来检验">从未来检验</h3>
+<blockquote>
+<p>第一原理（英语：First principle），哲学与逻辑名词，是一个最基本的命题或假设，不能被省略或删除，也不能被违反。第一原理相当于是在数学中的公理。最早由亚里士多德提出。<br>
+在物理学中，第一性原理，或称从头算，指从基本的物理学定律出发，不外加假设与经验拟合的推导与计算。例如利用薛定谔方程在一些近似方法下解电子结构，但不从实验数据得到拟合参数的从头计算法。</p>
+</blockquote>
+<p>量子听起来很好，但和宏观的实验相比，它太难实现了。暂且不说复杂的内部力场，光是无法直接表述力和内部关系，就够喝一壶了。<br>
+除此之外，科学界是否愿意接纳这种纯理论推导也是一个问题。<br>
+但从另一方面，仅凭<strong>理化实验</strong>带来的后验式实验本身需要多次校正。科学家开始通过<strong>第一性原理</strong>，借助基本的物理定律计算得到结果，并和预期实验拟合，逐渐地，实验、模拟和计算成为了物理学接受的方式。通过计算模拟的量子化学逐渐演变为一个新的学科&ndash;计算化学(computational chemistry)。<br>
+在基本物理定律的作用下，量子化学家通过计算不同物质的作用力，在生物、材料、分子模拟、生命、制药等方面找到了合适的分子、原子，造福人类。从这一角度来看，量子化学是化学的粘合剂。<br>
+这部分科学家着眼于第一性原理,旨在通过物理方式探索世间存在的力和相关规律，这偏向于物理和数学，我只能望而却步，而且一般不能注重于数学规律（这表示着AI所带来的规律型模型可能不适用）。但这些科学家不断提出了类似于DFT等理论，让计算化学得以更好的发展。</p>
+<h3 id="变成数学">变成数学</h3>
+<p>然而微观力实在过于繁杂，以至于手算是不可能的。恰好计算机的革命帮助了量子化学的发展。出现了新的学科&ndash;计算机化学。<br>
+我在这里希望各位区分计算化学和计算机化学的区别。诚然两者联系十分紧密，然而计算化学包含了如何把化学物质数字化；计算机化学则重于通过计算机应用（人工智能、超级计算机等），达到数值计算的目的。<br>
+计算化学的第一步，我认为，是如何把化学的结构变为数学。<br>
+这里需要借助拓扑学，从拓扑学我们可以把立体的构型变为数组和矩阵，便于计算和分析。使计算机化学成为可能。<br>
+这里介绍几种拓扑方式:<br>
+1.邻接矩阵  2.距离矩阵  3.Hückel矩阵等</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 P_P Blog
+    </section>
+    
+    <section class="powerby">
+        
+            非常好博客 <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -5,7 +5,42 @@
         <link>/post/</link>
         <description>Recent content in Posts on P_P Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Sat, 15 Oct 2022 09:30:04 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 11 Apr 2023 21:52:14 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计算化学（一）：化学、物理与数学</title>
+        <link>/post/qc1/</link>
+        <pubDate>Tue, 11 Apr 2023 21:52:14 +0800</pubDate>
+        
+        <guid>/post/qc1/</guid>
+        <description>&lt;p&gt;初始计算化学，故把此当作学习日志，以便后人参考。&lt;/p&gt;
+&lt;h2 id=&#34;1何为计算化学为何需要计算化学&#34;&gt;1.何为计算化学，为何需要计算化学&lt;/h2&gt;
+&lt;p&gt;计算化学的诞生离不开量子化学的发展，更离不了物理学的进步。&lt;/p&gt;
+&lt;h3 id=&#34;物理学的大厦已经落成上面只有两朵乌云&#34;&gt;“物理学的大厦已经落成，上面只有两朵乌云”&lt;/h3&gt;
+&lt;p&gt;在1900年，开尔文(Lord Kelvin)引出了物理学界的两朵乌云,它们分别为：&lt;br&gt;
+1.迈克尔孙—莫雷实验2.热辐射实验。&lt;br&gt;
+这两个实验日后分别发展为了相对论和&lt;strong&gt;量子力学&lt;/strong&gt;，人类彻底和牛顿告别，开启了现代物理学。&lt;br&gt;
+其中的量子力学包含超弦理论等暂且不做讨论，量子力学的开辟影响了化学的发展。量子化学(Quantum chemistry)开始作为一门学科出现。&lt;br&gt;
+我们初高中所学的原子、电子、夸克、能级跃迁、泡利原理等理论都源于量子化学，它允许我们以微观的视角了解化学元素的变化和反应机理。
+科学家通过分析微观力场和变化来展示宏观的现象，例如焰火显色等。&lt;/p&gt;
+&lt;h3 id=&#34;从未来检验&#34;&gt;从未来检验&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一原理（英语：First principle），哲学与逻辑名词，是一个最基本的命题或假设，不能被省略或删除，也不能被违反。第一原理相当于是在数学中的公理。最早由亚里士多德提出。&lt;br&gt;
+在物理学中，第一性原理，或称从头算，指从基本的物理学定律出发，不外加假设与经验拟合的推导与计算。例如利用薛定谔方程在一些近似方法下解电子结构，但不从实验数据得到拟合参数的从头计算法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;量子听起来很好，但和宏观的实验相比，它太难实现了。暂且不说复杂的内部力场，光是无法直接表述力和内部关系，就够喝一壶了。&lt;br&gt;
+除此之外，科学界是否愿意接纳这种纯理论推导也是一个问题。&lt;br&gt;
+但从另一方面，仅凭&lt;strong&gt;理化实验&lt;/strong&gt;带来的后验式实验本身需要多次校正。科学家开始通过&lt;strong&gt;第一性原理&lt;/strong&gt;，借助基本的物理定律计算得到结果，并和预期实验拟合，逐渐地，实验、模拟和计算成为了物理学接受的方式。通过计算模拟的量子化学逐渐演变为一个新的学科&amp;ndash;计算化学(computational chemistry)。&lt;br&gt;
+在基本物理定律的作用下，量子化学家通过计算不同物质的作用力，在生物、材料、分子模拟、生命、制药等方面找到了合适的分子、原子，造福人类。从这一角度来看，量子化学是化学的粘合剂。&lt;br&gt;
+这部分科学家着眼于第一性原理,旨在通过物理方式探索世间存在的力和相关规律，这偏向于物理和数学，我只能望而却步，而且一般不能注重于数学规律（这表示着AI所带来的规律型模型可能不适用）。但这些科学家不断提出了类似于DFT等理论，让计算化学得以更好的发展。&lt;/p&gt;
+&lt;h3 id=&#34;变成数学&#34;&gt;变成数学&lt;/h3&gt;
+&lt;p&gt;然而微观力实在过于繁杂，以至于手算是不可能的。恰好计算机的革命帮助了量子化学的发展。出现了新的学科&amp;ndash;计算机化学。&lt;br&gt;
+我在这里希望各位区分计算化学和计算机化学的区别。诚然两者联系十分紧密，然而计算化学包含了如何把化学物质数字化；计算机化学则重于通过计算机应用（人工智能、超级计算机等），达到数值计算的目的。&lt;br&gt;
+计算化学的第一步，我认为，是如何把化学的结构变为数学。&lt;br&gt;
+这里需要借助拓扑学，从拓扑学我们可以把立体的构型变为数组和矩阵，便于计算和分析。使计算机化学成为可能。&lt;br&gt;
+这里介绍几种拓扑方式:&lt;br&gt;
+1.邻接矩阵  2.距离矩阵  3.Hückel矩阵等&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Docker迁移</title>
         <link>/post/dockertransfer/</link>
         <pubDate>Sat, 15 Oct 2022 09:30:04 +0800</pubDate>
@@ -180,6 +215,26 @@ See here for more details - but no; nothing to do with Google Chrome.&lt;/p&gt;
     &gt;Why does Firefox use the &amp;ldquo;chrome://&amp;rdquo; protocol / schema in URLs?&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.v2ex.com/t/839937&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;为什么 Firefox 里面存在 chrome:// 地址?&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>2022.2.14</title>
+        <link>/post/2022.2.14/</link>
+        <pubDate>Mon, 14 Feb 2022 20:49:30 +0800</pubDate>
+        
+        <guid>/post/2022.2.14/</guid>
+        <description>&lt;h1 id=&#34;20220214&#34;&gt;2022.02.14&lt;/h1&gt;
+&lt;p&gt;明年可别像这样了😥&lt;br&gt;
+&lt;img src=&#34;https://i.ibb.co/rbjK7cT/2022-02-14-205412.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;asdawd&#34;
+	
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
