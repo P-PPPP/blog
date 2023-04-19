@@ -5,7 +5,93 @@
         <link>/post/</link>
         <description>Recent content in Posts on P_P Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Tue, 11 Apr 2023 21:52:14 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 19 Apr 2023 21:00:55 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计算化学（二）</title>
+        <link>/post/qc2/</link>
+        <pubDate>Wed, 19 Apr 2023 21:00:55 +0800</pubDate>
+        
+        <guid>/post/qc2/</guid>
+        <description>&lt;p&gt;配合 &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1j7411U7fy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/video/BV1j7411U7fy&lt;/a&gt; 学习&lt;/p&gt;
+&lt;h3 id=&#34;变成数学&#34;&gt;变成数学&lt;/h3&gt;
+&lt;p&gt;然而微观力实在过于繁杂，以至于手算是不可能的。恰好计算机的革命帮助了量子化学的发展。出现了新的学科&amp;ndash;计算机化学。&lt;br&gt;
+我在这里希望各位区分计算化学和计算机化学的区别。诚然两者联系十分紧密，然而计算化学包含了如何把化学物质数字化；计算机化学则重于通过计算机应用（人工智能、超级计算机等），达到数值计算的目的。&lt;br&gt;
+计算化学的第一步，我认为，是如何把化学的结构变为数学。&lt;br&gt;
+这里需要借助拓扑学，从拓扑学我们可以把立体的构型变为数组和矩阵，便于计算和分析。使计算机化学成为可能。&lt;br&gt;
+这里介绍几种拓扑方式:&lt;br&gt;
+1.邻接矩阵  2.距离矩阵  3.Hückel矩阵等&lt;/p&gt;
+&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;
+&lt;p&gt;常用的量子化学计算软件：Gaussian\VASP\HyperChem&lt;br&gt;
+其实就是在计算能量状态-&amp;gt;量子力学:粒子位置和势能变化&lt;br&gt;
+算法:半经验\从头算\DFT&lt;/p&gt;
+&lt;h3 id=&#34;量子力学&#34;&gt;量子力学&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;内坐标及笛卡尔(直角)坐标&lt;br&gt;
+用于计算不同原子之间距离、夹角、二面角的关系。在化学计算软件中用来表示分子结构&lt;br&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/32994395/233087360-cd250336-5aba-4b62-bbe2-1513fcb4d108.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+&gt;
+内坐标原子数和自由度的关系&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关于自旋多重度&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;S = 2*[(+1/2)*N(α)+(-1/2)*N(β)] + 1
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;定义:多重度= 2S+1, S=n*1/2,n为单电子数。所以，关键是单电子的数目是多少。&lt;br&gt;
+α电子：正（+） β电子：负（-）&lt;br&gt;
+当有偶数个电子时，例如02，共有16个电子，那么单电子数目可能是0,即8个alpha和8个beta电子配对，对应单重态，但是也可能是有9个a电子和7个β电子，那么能成对的是7对，还剩2个a没有配对，于是n=2,对应的是多重度3。同理还可以有多重度5, 7，9, 一般而言.是多重度低的能量低,最稳定,所以一般来说,偶数电子的体系多重度就是1但是也有例外，例如O2就是一个大家都知道的例子它的基态是三重态，重态反而是激发态。所必对于知的体系还是算几个保险一点看哪个能量更低。&lt;br&gt;
+总结一下:&lt;br&gt;
+电子数目是偶数，未成对电子数目n=0,2,4,..自旋多重度是1,3,5,7&amp;hellip;&lt;br&gt;
+电子数目是奇数，未成对电子数目n=1 ,3,7&amp;hellip;自旋多重度是2,4,6,8&amp;hellip;&lt;br&gt;
+多数情况是多重度低的能量低，有时(特别是有“磁’性的时候，例如顺磁的02，以及Fe啊什么的)，可能会高多重度的能量低，所以需要都算算，看哪个能量更低。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;势能面PES&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;分子基电子态的能量可 Born-Oppenheimer 以看作只是核坐标的函数，分子力学中的所有定义的函数 均只是核坐标的函数，体系能量的变化可以看成是在一个 多维面上的运动&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/32994395/233084539-dbbf15da-3cda-4b53-a5de-62a2e97eff55.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+&gt;
+从第一个模块依次是:化学键的能量、键角变化的能量、二面角变化的能量、范德华力改变的能量、静电相互作用&lt;br&gt;
+体系能量的变化=原子坐标面的变化=&amp;gt;势能面
+势能面是一个&lt;strong&gt;超平面&lt;/strong&gt;，对于改变一个变量:是二维图形,同时改变两个变量-&amp;gt;三维图形
+&lt;img src=&#34;https://user-images.githubusercontent.com/32994395/233095220-330314ca-b5b3-4d27-bcdd-b4bf0b302f69.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+&gt;
+如图所示，当在其他原子属性不变的情况下改变α和β的二面角，将会得到一个三维势能面、而当固定α=30°时，势能面为一个二维图形，其实是下面的切面。同理如果同时改变三个变量，则得到&lt;code&gt;3N-6=3x3-6=3&lt;/code&gt;四维图形，这是难以直观表述的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;构型优化与构象搜索&lt;br&gt;
+势能面的扫描较难&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>计算化学（一）：化学、物理与数学</title>
         <link>/post/qc1/</link>
         <pubDate>Tue, 11 Apr 2023 21:52:14 +0800</pubDate>
@@ -30,14 +116,9 @@
 除此之外，科学界是否愿意接纳这种纯理论推导也是一个问题。&lt;br&gt;
 但从另一方面，仅凭&lt;strong&gt;理化实验&lt;/strong&gt;带来的后验式实验本身需要多次校正。科学家开始通过&lt;strong&gt;第一性原理&lt;/strong&gt;，借助基本的物理定律计算得到结果，并和预期实验拟合，逐渐地，实验、模拟和计算成为了物理学接受的方式。通过计算模拟的量子化学逐渐演变为一个新的学科&amp;ndash;计算化学(computational chemistry)。&lt;br&gt;
 在基本物理定律的作用下，量子化学家通过计算不同物质的作用力，在生物、材料、分子模拟、生命、制药等方面找到了合适的分子、原子，造福人类。从这一角度来看，量子化学是化学的粘合剂。&lt;br&gt;
-这部分科学家着眼于第一性原理,旨在通过物理方式探索世间存在的力和相关规律，这偏向于物理和数学，我只能望而却步，而且一般不能注重于数学规律（这表示着AI所带来的规律型模型可能不适用）。但这些科学家不断提出了类似于DFT等理论，让计算化学得以更好的发展。&lt;/p&gt;
-&lt;h3 id=&#34;变成数学&#34;&gt;变成数学&lt;/h3&gt;
-&lt;p&gt;然而微观力实在过于繁杂，以至于手算是不可能的。恰好计算机的革命帮助了量子化学的发展。出现了新的学科&amp;ndash;计算机化学。&lt;br&gt;
-我在这里希望各位区分计算化学和计算机化学的区别。诚然两者联系十分紧密，然而计算化学包含了如何把化学物质数字化；计算机化学则重于通过计算机应用（人工智能、超级计算机等），达到数值计算的目的。&lt;br&gt;
-计算化学的第一步，我认为，是如何把化学的结构变为数学。&lt;br&gt;
-这里需要借助拓扑学，从拓扑学我们可以把立体的构型变为数组和矩阵，便于计算和分析。使计算机化学成为可能。&lt;br&gt;
-这里介绍几种拓扑方式:&lt;br&gt;
-1.邻接矩阵  2.距离矩阵  3.Hückel矩阵等&lt;/p&gt;
+这部分科学家着眼于第一性原理,旨在通过物理方式探索世间存在的力和相关规律，这偏向于物理和数学，我只能望而却步，而且一般不能注重于数学规律（这表示着AI所带来的规律型模型可能不适用）。但这些科学家不断提出了类似于DFT等理论，让计算化学得以更好的发展。
+接下来我将配合 &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1j7411U7fy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/video/BV1j7411U7fy&lt;/a&gt; 学习&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -215,26 +296,6 @@ See here for more details - but no; nothing to do with Google Chrome.&lt;/p&gt;
     &gt;Why does Firefox use the &amp;ldquo;chrome://&amp;rdquo; protocol / schema in URLs?&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.v2ex.com/t/839937&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;为什么 Firefox 里面存在 chrome:// 地址?&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>2022.2.14</title>
-        <link>/post/2022.2.14/</link>
-        <pubDate>Mon, 14 Feb 2022 20:49:30 +0800</pubDate>
-        
-        <guid>/post/2022.2.14/</guid>
-        <description>&lt;h1 id=&#34;20220214&#34;&gt;2022.02.14&lt;/h1&gt;
-&lt;p&gt;明年可别像这样了😥&lt;br&gt;
-&lt;img src=&#34;https://i.ibb.co/rbjK7cT/2022-02-14-205412.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;asdawd&#34;
-	
-	
-&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
