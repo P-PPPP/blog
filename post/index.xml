@@ -5,7 +5,60 @@
         <link>/post/</link>
         <description>Recent content in Posts on P_P Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Fri, 12 May 2023 11:17:57 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 16 May 2023 09:03:31 +0800</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>初探ZeroTier</title>
+        <link>/post/zerotier/</link>
+        <pubDate>Tue, 16 May 2023 09:03:31 +0800</pubDate>
+        
+        <guid>/post/zerotier/</guid>
+        <description>&lt;p&gt;ZeroTier是目前比较好使的异地组网服务，并且开源免费。&lt;br&gt;
+实测在手机ipv6+电脑多层NAT网络环境下能保证较好的连接速度，网速和延迟属于可以流畅看照片、传输小文件的程度，但还不至于可以1080P流式传输，那种可能需要50MPBS的速率。&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ping测试&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/danielgatis/rembg/assets/32994395/84cdf431-fabd-46ba-8c5d-42bca9c098d5&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Screenshot_2023-05-15-23-16-38-081_com microsoft_&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;远程桌面可以链接，得益于RDP的变更算法，在静止状态下目测可以720p,大规模像素移动只能540P了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/danielgatis/rembg/assets/32994395/70c69caf-39c2-4fd9-a110-d7de9ef445c8&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Screenshot_2023-05-15-23-16-28-902_org mozilla fi&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;电脑这边作为服务器可正常使用，常用端口并未影响。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/danielgatis/rembg/assets/32994395/4eeb9cb8-e040-4833-aefd-706c0bf7f0f2&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Screenshot_2023-05-15-23-16-16-388_com dv adm&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文件串流测试，多线程下载速度最快16Mpbs，只能说勉强够用。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>傻逼Microsoft Office Word</title>
         <link>/post/sbword/</link>
         <pubDate>Fri, 12 May 2023 11:17:57 +0800</pubDate>
